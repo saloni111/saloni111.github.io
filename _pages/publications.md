@@ -68,7 +68,7 @@ author_profile: true
         🧾 Intern @ 
         <a href="http://www.unipune.ac.in/" target="_blank" style="color: #0366d6;">Savitribai Phule Pune University</a>
       </h3>
-      <a href="/salonigandhi.github.io/files/LOR.pdf" target="_blank" style="font-size: 0.95rem;">LOR</a>
+      <a href="/salonigandhi.github.io/files/LOR.pdf" target="_blank" style="font-size: 0.95rem;">Certificate</a>
     </div>
     <p style="margin: 0.2rem 0 0.7rem;"><em>Apr 2020 – Nov 2020</em></p>
     <ul style="margin: 0; padding-left: 1.2rem;">
