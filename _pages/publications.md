@@ -23,6 +23,9 @@ author_profile: true
       <li>Automated ETD APAC exchange testing for 7 countries; saved 10 person-days per cycle.</li>
       <li>Created a Python log-scraping tool adopted by 50+ users monthly across teams.</li>
     </ul>
+    <p style="margin: 0.2rem 0 0;">
+      📄 <a href="/images/Certificate of Service.pdf" target="_blank">Certificate of Service.pdf</a>
+    </p>
   </div>
 
   <!-- UBS - Intern -->
@@ -36,7 +39,7 @@ author_profile: true
       <li>Developed VueJS + Java GUI for FIX message validation; improved accuracy by 95%.</li>
     </ul>
     <p style="margin: 0.2rem 0 0;">
-      📄 <a href="/assets/certificates/UBS_Semester_Intern_Certificate.pdf" target="_blank">UBS_Semester_Intern_Certificate.pdf</a>
+      📄 <a href="/images/UBS_Semester_Intern_Certificate.pdf" target="_blank">UBS_Semester_Intern_Certificate.pdf</a>
     </p>
   </div>
 
@@ -51,7 +54,7 @@ author_profile: true
       <li>Improved audit tracking and reduced SME dependency for automation.</li>
     </ul>
     <p style="margin: 0.2rem 0 0;">
-      📄 <a href="/assets/certificates/UBS_Summer_Intern_Certificate.pdf" target="_blank">UBS_Summer_Intern_Certificate.pdf</a>
+      📄 <a href="/images/UBS_Summer_Intern_Certificate.pdf" target="_blank">UBS_Summer_Intern_Certificate.pdf</a>
     </p>
   </div>
 
@@ -65,6 +68,9 @@ author_profile: true
       <li>Launched e-learning app with real-time quiz editing; adopted by 20+ institutions.</li>
       <li>Developed scalable Node.js API supporting real-time data for 2,000+ users.</li>
     </ul>
+    <p style="margin: 0.2rem 0 0;">
+      📄 <a href="/images/LOR.pdf" target="_blank">LOR.pdf</a>
+    </p>
   </div>
 
 </div>
