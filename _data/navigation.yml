@@ -9,8 +9,8 @@ main:
   - title: "Resume"
     url: /files/Saloni_Gandhi_Resume.pdf
 
-  - title: "Cool Stuff!"
-    url: /cool-stuff/ 
+  # - title: "Cool Stuff!"
+  #  url: /cool-stuff/ 
 
   # - title: "Talks"
   #   url: /talks/       
