@@ -19,7 +19,7 @@ author_profile: true
         🧾 Software Engineer @ 
         <a href="https://www.ubs.com/global/en.html" target="_blank" style="color: #0366d6;">Union Bank of Switzerland (UBS)</a>
       </h3>
-      <a href="/files/Certificate_of_Service.pdf" target="_blank" style="font-size: 0.95rem;">Certificate</a>
+      <a href="/salonigandhi.github.io/files/Certificate_of_Service.pdf" target="_blank" style="font-size: 0.95rem;">Certificate</a>
     </div>
     <p style="margin: 0.2rem 0 0.7rem;"><em>Jul 2022 – Jul 2024</em></p>
     <ul style="margin: 0; padding-left: 1.2rem;">
@@ -36,7 +36,7 @@ author_profile: true
         🧾 Intern @ 
         <a href="https://www.ubs.com/global/en.html" target="_blank" style="color: #0366d6;">Union Bank of Switzerland (UBS)</a>
       </h3>
-      <a href="/files/Semester_Intern.pdf" target="_blank" style="font-size: 0.95rem;">Certificate</a>
+      <a href="/salonigandhi.github.io/files/Semester_Intern.pdf" target="_blank" style="font-size: 0.95rem;">Certificate</a>
     </div>
     <p style="margin: 0.2rem 0 0.7rem;"><em>Jan 2022 – Jun 2022</em></p>
     <ul style="margin: 0; padding-left: 1.2rem;">
@@ -52,7 +52,7 @@ author_profile: true
         🧾 Summer Intern – TOC @ 
         <a href="https://www.ubs.com/global/en.html" target="_blank" style="color: #0366d6;">Union Bank of Switzerland (UBS)</a>
       </h3>
-      <a href="/files/Summer_Intern.pdf" target="_blank" style="font-size: 0.95rem;">Certificate</a>
+      <a href="/salonigandhi.github.io/files/Summer_Intern.pdf" target="_blank" style="font-size: 0.95rem;">Certificate</a>
     </div>
     <p style="margin: 0.2rem 0 0.7rem;"><em>Jun 2021 – Aug 2021</em></p>
     <ul style="margin: 0; padding-left: 1.2rem;">
@@ -68,7 +68,7 @@ author_profile: true
         🧾 Intern @ 
         <a href="http://www.unipune.ac.in/" target="_blank" style="color: #0366d6;">Savitribai Phule Pune University</a>
       </h3>
-      <a href="/files/LOR.pdf" target="_blank" style="font-size: 0.95rem;">LOR</a>
+      <a href="/files/Certificate_of_Service.pdf" target="_blank">Certificate</a>
     </div>
     <p style="margin: 0.2rem 0 0.7rem;"><em>Apr 2020 – Nov 2020</em></p>
     <ul style="margin: 0; padding-left: 1.2rem;">
