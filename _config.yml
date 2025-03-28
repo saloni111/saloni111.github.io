@@ -7,13 +7,13 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Pranav Parnerkar"
+title                    : "Saloni Gandhi"
 title_separator          : "-"
-name                     : &name "Pranav Parnerkar"
-description              : &description "MS CS @ USC"
-url                      : https://parnerka.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+name                     : &name "Saloni Gandhi"
+description              : &description "MS CS @ IUB"
+url                      : https://saloni111.github.io/salonigandhi.github.io/ # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "parnerka/parnerka.github.io"
+repository               : "saloni111.github.io/salonigandhi.github.io"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
@@ -80,29 +80,29 @@ analytics:
 
 # Site Author
 author:
-  name             : "Pranav Parnerkar"
+  name             : "Saloni Gandhi"
   avatar           : "profile.jpeg"
-  bio              : "MS CS @ USC"
-  location         : "Los Angeles, CA"
+  bio              : "MS CS @ IUB"
+  location         : ""
   employer         :
   pubmed           : 
   googlescholar    : 
-  email            : "parnerka@usc.edu"
+  email            : "smgandhi@iu.edu"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
-  uri              : "https://parnerka.github.io"
+  uri              : "https://saloni111.github.io/salonigandhi.github.io/"
   bitbucket        :
   codepen          :
   dribbble         :
   flickr           :
   facebook         :
   foursquare       :
-  github           : "parnerka"
+  github           : "saloni111"
   google_plus      :
   keybase          :
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         : "pranav-parnerkar"
+  linkedin         : "saloni-gandhi-8a3b401b2/"
   orcid            : 
   pinterest        :
   soundcloud       :
@@ -113,7 +113,7 @@ author:
   vine             :
   weibo            :
   xing             :
-  youtube          : https://www.youtube.com/@varunv5
+  youtube          : #https://www.youtube.com/@varunv5
   wikipedia        :
 
 
@@ -255,7 +255,7 @@ sass:
 permalink: /:categories/:title/
 # paginate: 5 # amount of posts to show
 # paginate_path: /page:num/
-timezone: America/Los_Angeles # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: America/New_York # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins
