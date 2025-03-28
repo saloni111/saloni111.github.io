@@ -1,7 +1,7 @@
 ---
 title: "Work Experience"
 layout: page
-permalink: /portfolio/
+permalink: /publications/
 author_profile: true
 ---
 
