@@ -1,7 +1,6 @@
 ---
 layout: page
 title: "Work Experience"
-permalink: /experience/
 author_profile: true
 ---
 
