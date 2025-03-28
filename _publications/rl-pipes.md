@@ -1,7 +1,6 @@
 ---
-title: "Hyper Localization of Leaks in Piping and Cabling Systems using Reinforcement Learning"
+title: "UBS SDE"
 collection: publications
-permalink: /publication/rl-pipes
 excerpt: 'Leaks have undoubtedly been one of the biggest
 problems plaguing piping and cabling systems across industries
 like electricity and power, building and smart cities, oil and gas,
