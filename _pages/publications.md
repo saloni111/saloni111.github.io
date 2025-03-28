@@ -1,36 +1,42 @@
 ---
-layout: page
 title: "Work Experience"
+layout: page
+permalink: /portfolio/
 author_profile: true
 ---
 
-<div style="max-width: 850px; margin: auto; padding: 1rem; line-height: 1.7; font-family: system-ui, sans-serif;">
+<div style="max-width: 900px; margin: auto; padding: 2rem; font-family: system-ui, sans-serif; line-height: 1.6;">
 
-  <h2 style="margin-top: 0;">Union Bank of Switzerland (UBS), Pune, India</h2>
-  <p><strong>Software Engineer</strong> – Market Access, Investment Banking<br><em>Jul 2022 – Jul 2024</em></p>
-  <ul>
-    <li>Architected a robust automation framework using Cucumber Tests, enabling 1,000+ test cases and early bug detection.</li>
-    <li>Automated ETD APAC testing across 7 countries; cut testing time by 80%, saving 10 person-days/test cycle.</li>
-    <li>Built a Python-based audit trail aggregation tool used by 50+ users monthly for efficient log analysis.</li>
-  </ul>
+  <h1 style="font-size: 2rem; margin-bottom: 0.5rem;">Work Experience 💼</h1>
 
-  <p><strong>Intern</strong> – Market Access, Investment Banking<br><em>Jan 2022 – Jun 2022</em></p>
-  <ul>
-    <li>Developed Java-based dashboards used in weekly reports, visualizing key data insights.</li>
-    <li>Built a VueJS + Java GUI to detect inconsistencies in FIX messages, improving data accuracy by 95%.</li>
-  </ul>
+  <div style="margin-bottom: 1.75rem;">
+    <h3 style="margin: 0;">Union Bank of Switzerland (UBS), Pune, India</h3>
+    <p><strong>Software Engineer</strong> – Market Access, Investment Banking<br><em>Jul 2022 – Jul 2024</em></p>
+    <ul>
+      <li>Built Cucumber-based automation framework executing 1,000+ test cases; caught bugs early in the SDLC.</li>
+      <li>Automated ETD APAC exchange testing for 7 countries; saved 10 person-days/test cycle.</li>
+      <li>Created a Python log-scraping tool adopted by 50+ users monthly.</li>
+    </ul>
 
-  <p><strong>Summer Intern</strong> – Technology Operation Center<br><em>Jun 2021 – Aug 2021</em></p>
-  <ul>
-    <li>Designed UI for “Digi TOC,” a workflow automation tool, reducing ticket turnaround time by 25%.</li>
-    <li>Eliminated manual ops, improved automation auditing, and reduced SME dependency.</li>
-  </ul>
+    <p><strong>Intern</strong><br><em>Jan 2022 – Jun 2022</em></p>
+    <ul>
+      <li>Designed Java dashboards used in weekly team reports.</li>
+      <li>Developed VueJS + Java GUI for FIX message validation; improved accuracy by 95%.</li>
+    </ul>
 
-  <h2>Savitribai Phule Pune University, Pune, India</h2>
-  <p><strong>Intern</strong><br><em>Apr 2020 – Nov 2020</em></p>
-  <ul>
-    <li>Developed a real-time quiz app with live editing; adopted by 20+ institutions, boosting participation by 30%.</li>
-    <li>Created a scalable Node.js API enabling smooth front–back integration for 2,000+ users.</li>
-  </ul>
+    <p><strong>Summer Intern – TOC</strong><br><em>Jun 2021 – Aug 2021</em></p>
+    <ul>
+      <li>Built UI for “Digi TOC” workflow tool, reducing ticket time by 25% and improving onboarding UX.</li>
+    </ul>
+  </div>
+
+  <div style="margin-bottom: 1.75rem;">
+    <h3 style="margin: 0;">Savitribai Phule Pune University, Pune, India</h3>
+    <p><strong>Intern</strong><br><em>Apr 2020 – Nov 2020</em></p>
+    <ul>
+      <li>Launched e-learning app with real-time quiz editing; adopted by 20+ institutes.</li>
+      <li>Created Node.js API handling real-time data for 2,000+ users.</li>
+    </ul>
+  </div>
 
 </div>
