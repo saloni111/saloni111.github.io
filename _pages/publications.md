@@ -18,7 +18,7 @@ author_profile: true
       🧾 Software Engineer @ 
       <a href="https://www.ubs.com/global/en.html" target="_blank" style="color: #3BA3A5;">Union Bank of Switzerland (UBS)</a>
     </h3>
-    <a href="/salonigandhi.github.io/files/Certificate_of_Service.pdf" target="_blank" style="font-size: 0.9rem; color: #3BA3A5;">Certificate</a>
+    <a href="/files/Certificate_of_Service.pdf" target="_blank" style="font-size: 0.9rem; color: #3BA3A5;">Certificate</a>
   </div>
   <p style="font-size: 0.95rem; color: #555; margin-top: 0.2rem;">Technologies: Java, Python, Cucumber, Gradle</p>
   <ul style="margin: 0.2rem 0 0 1.2rem; padding: 0; list-style-type: disc;">
@@ -37,7 +37,7 @@ author_profile: true
       🧾 Intern @ 
       <a href="https://www.ubs.com/global/en.html" target="_blank" style="color: #3BA3A5;">Union Bank of Switzerland (UBS)</a>
     </h3>
-    <a href="/salonigandhi.github.io/files/Semester_Intern.pdf" target="_blank" style="font-size: 0.9rem; color: #3BA3A5;">Certificate</a>
+     <a href="/files/Semester_Intern.pdf" target="_blank" style="font-size: 0.9rem; color: #3BA3A5;">Certificate</a>
   </div>
   <p style="font-size: 0.95rem; color: #555; margin-top: 0.2rem;">Technologies: Java, Vue.js</p>
   <ul style="margin: 0.2rem 0 0 1.2rem; padding: 0;">
@@ -53,7 +53,7 @@ author_profile: true
       🧾 Summer Intern – TOC @ 
       <a href="https://www.ubs.com/global/en.html" target="_blank" style="color: #3BA3A5;">Union Bank of Switzerland (UBS)</a>
     </h3>
-    <a href="/salonigandhi.github.io/files/Summer_Intern.pdf" target="_blank" style="font-size: 0.9rem; color: #3BA3A5;">Certificate</a>
+    <a href="/files/Summer_Intern.pdf" target="_blank" style="font-size: 0.9rem; color: #3BA3A5;">Certificate</a> 
   </div>
   <p style="font-size: 0.95rem; color: #555; margin-top: 0.2rem;">Technologies: ReactJS, Python, ITIL Framework</p>
   <ul style="margin: 0.2rem 0 0 1.2rem; padding: 0;">
@@ -69,7 +69,7 @@ author_profile: true
       🧾 Intern @ 
       <a href="http://www.unipune.ac.in/" target="_blank" style="color: #3BA3A5;">Savitribai Phule Pune University</a>
     </h3>
-    <a href="/salonigandhi.github.io/files/LOR.pdf" target="_blank" style="font-size: 0.9rem; color: #3BA3A5;">Certificate</a>
+    <a href="/files/LOR.pdf" target="_blank" style="font-size: 0.9rem; color: #3BA3A5;">Certificate</a> 
   </div>
   <p style="font-size: 0.95rem; color: #555; margin-top: 0.2rem;">Technologies: Node.js, Express.js, React.js, MongoDB, WebSockets (Socket.io), AWS</p>
   <ul style="margin: 0.2rem 0 0 1.2rem; padding: 0;">
