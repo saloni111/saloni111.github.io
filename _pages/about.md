@@ -8,13 +8,13 @@ redirect_from:
   - /about/
   - /about.html
 ---
-
 <style>
 :root {
   --link-color: #00a6a6;
   --line-gray: #888;
 }
 
+/* Shared heading style */
 .section-title {
   font-size: 1.35rem;
   font-weight: 700;
@@ -25,10 +25,18 @@ redirect_from:
   align-items: center;
   gap: 0.5rem;
 }
-.section-title::before {
+
+/* Work Experience Title */
+.work-title::before {
+  content: "🧑‍💻";
+}
+
+/* Technical Skills Title */
+.tech-title::before {
   content: "🛠️";
 }
 
+/* Timeline line and dots */
 .timeline {
   border-left: 2.5px solid var(--line-gray);
   padding-left: 1.3rem;
