@@ -1,9 +1,10 @@
 ---
 title: "Work Experience"
 layout: page
-permalink: /work/
+permalink: /publications/
 author_profile: true
 ---
+
 
 <div style="max-width: 900px; margin: auto; padding: 2rem 1rem; font-family: system-ui, sans-serif; font-size: 1rem; line-height: 1.5; color: #333;">
 
