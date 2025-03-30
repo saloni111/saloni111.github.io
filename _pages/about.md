@@ -11,15 +11,14 @@ redirect_from:
 
 <style>
 :root {
-  --primary: #222;
-  --accent: #1d9bf0;
-  --light-line: #d3d3d3;
+  --link-color: #00a6a6;
+  --line-gray: #888;
 }
 
 .section-title {
   font-size: 1.35rem;
   font-weight: 700;
-  color: var(--primary);
+  color: #222;
   margin-top: 2.5rem;
   margin-bottom: 1.2rem;
   display: flex;
@@ -31,8 +30,8 @@ redirect_from:
 }
 
 .timeline {
-  border-left: 2px solid var(--light-line);
-  padding-left: 1.2rem;
+  border-left: 2.5px solid var(--line-gray);
+  padding-left: 1.3rem;
   margin-bottom: 2rem;
 }
 .timeline-entry {
@@ -42,35 +41,22 @@ redirect_from:
 .timeline-entry::before {
   content: '';
   position: absolute;
-  left: -12px;
-  top: 6px;
-  width: 10px;
-  height: 10px;
-  background: var(--light-line);
+  left: -10px;
+  top: 4px;
+  width: 9px;
+  height: 9px;
+  background: var(--line-gray);
   border-radius: 50%;
 }
-.timeline-entry .date {
-  color: var(--primary);
-  font-size: 0.96rem;
-  font-weight: 500;
+.timeline-entry span {
+  display: block;
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 0.2rem;
 }
-.timeline-entry .role {
-  font-size: 0.98rem;
-  color: #444;
-}
-.timeline-entry .company a {
-  color: var(--primary);
+.timeline-entry a {
+  color: var(--link-color);
   text-decoration: underline;
-}
-
-.skills-block {
-  margin: 0.3rem 0;
-  font-size: 0.96rem;
-  line-height: 1.5;
-}
-.skills-block strong {
-  font-weight: 600;
-  color: var(--primary);
 }
 </style>
 
@@ -89,24 +75,24 @@ I’ve worked on a variety of projects, including an AI-based tool for detecting
 Outside of tech, I’m a national speedball player, which has taught me teamwork, focus, and discipline.
 </p>
 
-<!-- Work Experience -->
+<!-- Work Experience Section -->
 <h2 class="section-title">Work Experience</h2>
 <div class="timeline">
   <div class="timeline-entry">
-    <div class="date">● Jul 2022 – Jul 2024</div>
-    <div class="role">Software Engineer @ <span class="company"><a href="https://www.ubs.com/global/en.html" target="_blank">UBS</a></span></div>
+    <span>Jul 2022 – Jul 2024</span>
+    <div>Software Engineer @ <a href="https://www.ubs.com/global/en.html" target="_blank">UBS</a></div>
   </div>
   <div class="timeline-entry">
-    <div class="date">● Jan 2022 – Jun 2022</div>
-    <div class="role">Intern – Market Access Group @ <span class="company"><a href="https://www.ubs.com/global/en.html" target="_blank">UBS</a></span></div>
+    <span>Jan 2022 – Jun 2022</span>
+    <div>Intern – Market Access Group @ <a href="https://www.ubs.com/global/en.html" target="_blank">UBS</a></div>
   </div>
   <div class="timeline-entry">
-    <div class="date">● Jun 2021 – Aug 2021</div>
-    <div class="role">Summer Intern – Technology Operations Center @ <span class="company"><a href="https://www.ubs.com/global/en.html" target="_blank">UBS</a></span></div>
+    <span>Jun 2021 – Aug 2021</span>
+    <div>Summer Intern – Technology Operations Center @ <a href="https://www.ubs.com/global/en.html" target="_blank">UBS</a></div>
   </div>
   <div class="timeline-entry">
-    <div class="date">● Apr 2020 – Nov 2020</div>
-    <div class="role">Intern @ <span class="company"><a href="http://www.unipune.ac.in/" target="_blank">Savitribai Phule Pune University</a></span></div>
+    <span>Apr 2020 – Nov 2020</span>
+    <div>Intern @ <a href="http://www.unipune.ac.in/" target="_blank">Savitribai Phule Pune University</a></div>
   </div>
 </div>
 
