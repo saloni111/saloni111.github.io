@@ -10,54 +10,18 @@ redirect_from:
 ---
 
 <style>
-/* THEME COLORS */
 :root {
   --primary: #0066ff;
-  --secondary: #e63946;
-  --gray: #444;
-  --light-gray: #f5f5f5;
+  --accent: #e63946;
+  --light-gray: #f9f9f9;
 }
 
-/* Timeline Styling */
-.timeline {
-  border-left: 3px solid var(--primary);
-  padding-left: 1.2rem;
-  margin-top: 2rem;
-}
-.timeline-entry {
-  position: relative;
-  margin-bottom: 2rem;
-}
-.timeline-entry::before {
-  content: '';
-  position: absolute;
-  left: -12px;
-  top: 5px;
-  width: 12px;
-  height: 12px;
-  background: var(--primary);
-  border-radius: 50%;
-  border: 2px solid white;
-}
-.timeline-entry h4 {
-  font-size: 1.05rem;
-  font-weight: 600;
-  margin: 0.2rem 0;
-}
-.timeline-entry small {
-  display: block;
-  margin-bottom: 0.5rem;
-  color: #666;
-  font-size: 0.9rem;
-}
-
-/* Section headers */
 .section-title {
-  font-size: 1.4rem;
+  font-size: 1.35rem;
   font-weight: 700;
-  margin-top: 3rem;
-  margin-bottom: 1rem;
   color: var(--primary);
+  margin-top: 2.5rem;
+  margin-bottom: 1.2rem;
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -66,16 +30,46 @@ redirect_from:
   content: "🛠️";
 }
 
-/* Skills block styling */
+.timeline {
+  border-left: 3px solid var(--primary);
+  padding-left: 1.2rem;
+  margin-bottom: 2rem;
+}
+.timeline-entry {
+  position: relative;
+  margin-bottom: 1.8rem;
+}
+.timeline-entry::before {
+  content: '';
+  position: absolute;
+  left: -12px;
+  top: 6px;
+  width: 10px;
+  height: 10px;
+  background: var(--primary);
+  border-radius: 50%;
+}
+.timeline-entry small {
+  display: block;
+  color: #666;
+  font-size: 0.92rem;
+  margin-bottom: 0.2rem;
+}
+.timeline-entry h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* Skills list clean and styled */
 .skills-block {
-  background: var(--light-gray);
-  border-left: 4px solid var(--secondary);
-  padding: 1rem 1rem 1rem 1.5rem;
   margin-bottom: 1rem;
-  line-height: 1.6;
+  font-size: 0.97rem;
+  line-height: 1.7;
 }
 .skills-block strong {
-  color: var(--secondary);
+  color: var(--accent);
+  font-weight: 600;
 }
 </style>
 
@@ -84,7 +78,7 @@ I am a graduate student pursuing a Master of Science in Computer Science at the 
 </p>
 
 <p>
-I’ve worked on a variety of projects, including an AI-based tool for detecting eye diseases, a language converter that transforms C code into Java and Python, and dashboards that simplify complex financial data. I enjoy breaking down problems, writing code that works well in production, and learning new technologies as I go.
+I’ve worked on a variety of projects, including an AI-based tool for detecting eye diseases, a language converter that transforms C code into Java and Python, and dashboards that simplify complex financial data. I enjoy breaking down problems, writing clean code, and learning new technologies as I go.
 </p>
 
 <p>
@@ -124,7 +118,7 @@ Outside of tech, I’m a national speedball player, which has taught me teamwork
 </div>
 
 <div class="skills-block">
-  <strong>Database:</strong><br>
+  <strong>Databases:</strong><br>
   PostgreSQL, MySQL, SQLite, MongoDB, Cassandra, Redis, DynamoDB
 </div>
 
