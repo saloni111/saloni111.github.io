@@ -87,30 +87,36 @@ Outside of tech, I’m a national speedball player, which has taught me teamwork
 
 ---
 
-<!-- Work Experience -->
-<h2 style="font-weight: 700; font-size: 1.4rem; margin-top: 2rem; margin-bottom: 1.2rem;">🛠️ Work Experience</h2>
-<div style="border-left: 3px solid #0A66C2; padding-left: 1rem;">
-  <p style="margin-bottom: 0.2rem;"><span style="color:#0A66C2;">●</span> <strong>Jul 2022 – Jul 2024</strong></p>
-  <p style="margin-top: 0; margin-bottom: 1rem;"><strong>Software Engineer</strong> @ <a href="https://www.ubs.com/global/en.html" target="_blank">UBS</a></p>
-
-  <p style="margin-bottom: 0.2rem;"><span style="color:#0A66C2;">●</span> <strong>Jan 2022 – Jun 2022</strong></p>
-  <p style="margin-top: 0; margin-bottom: 1rem;"><strong>Intern – Market Access Group</strong> @ <a href="https://www.ubs.com/global/en.html" target="_blank">UBS</a></p>
-
-  <p style="margin-bottom: 0.2rem;"><span style="color:#0A66C2;">●</span> <strong>Jun 2021 – Aug 2021</strong></p>
-  <p style="margin-top: 0; margin-bottom: 1rem;"><strong>Summer Intern – Technology Operations Center</strong> @ <a href="https://www.ubs.com/global/en.html" target="_blank">UBS</a></p>
-
-  <p style="margin-bottom: 0.2rem;"><span style="color:#0A66C2;">●</span> <strong>Apr 2020 – Nov 2020</strong></p>
-  <p style="margin-top: 0;"><strong>Intern</strong> @ <a href="http://www.unipune.ac.in/" target="_blank">Savitribai Phule Pune University</a></p>
+<!-- Work Experience Section -->
+<h2 style="color:#222; font-weight:600; margin-bottom:1rem;">🛠️ Work Experience</h2>
+<div style="border-left: 3px solid lightgray; padding-left: 1rem; margin-bottom:2rem;">
+  <div style="margin-bottom: 1.2rem;">
+    <span style="color:gray;">● Jul 2022 – Jul 2024</span><br>
+    <span>Software Engineer @ <a href="https://www.ubs.com/global/en.html" target="_blank" style="color:#007acc;">UBS</a></span>
+  </div>
+  <div style="margin-bottom: 1.2rem;">
+    <span style="color:gray;">● Jan 2022 – Jun 2022</span><br>
+    <span>Intern – Market Access Group @ <a href="https://www.ubs.com/global/en.html" target="_blank" style="color:#007acc;">UBS</a></span>
+  </div>
+  <div style="margin-bottom: 1.2rem;">
+    <span style="color:gray;">● Jun 2021 – Aug 2021</span><br>
+    <span>Summer Intern – Technology Operations Center @ <a href="https://www.ubs.com/global/en.html" target="_blank" style="color:#007acc;">UBS</a></span>
+  </div>
+  <div>
+    <span style="color:gray;">● Apr 2020 – Nov 2020</span><br>
+    <span>Intern @ <a href="http://www.unipune.ac.in/" target="_blank" style="color:#007acc;">Savitribai Phule Pune University</a></span>
+  </div>
 </div>
 
-<!-- Technical Skills -->
-<h2 style="font-weight: 700; font-size: 1.4rem; margin-top: 2.5rem; margin-bottom: 1.2rem;">🛠️ Technical Skills</h2>
+<!-- Technical Skills Section -->
+<h2 style="color:#222; font-weight:600;">🛠️ Technical Skills</h2>
 
-<p><strong style="color: #111;">Languages/Frameworks:</strong> C/C++, Python, Java, JavaScript, Bash, Shell, Vue.js, Django, Flask, Node.js, LangChain</p>
-<p><strong style="color: #111;">Databases:</strong> PostgreSQL, MySQL, SQLite, MongoDB, Cassandra, Redis, DynamoDB</p>
-<p><strong style="color: #111;">Tools & Libraries:</strong> Git, GitHub, Linux, Elasticsearch, Visual Studio, Postman, Swagger, Power BI, Tableau, Selenium, Jira</p>
-<p><strong style="color: #111;">Cloud & DevOps:</strong> Azure, AWS (EC2, S3, ECR, ECS, RDS, Lambda, CloudWatch, Glue), GitHub Actions, Docker, Kubernetes</p>
-<p><strong style="color: #111;">AI & ML:</strong> PyTorch, TensorFlow, Scikit, Pandas, NumPy, Matplotlib, Hugging Face, Transformers, LLM, NLP, CV, Gen AI</p>
-<p><strong style="color: #111;">Other:</strong> Backend, Distributed Systems, Debugging, Agile, SDLC, Data Analysis, Data Visualization, AI Integration</p>
+<p><strong>Languages/Frameworks:</strong> C/C++, Python, Java, JavaScript, Bash, Shell, Vue.js, Django, Flask, Node.js, LangChain</p>
+<p><strong>Databases:</strong> PostgreSQL, MySQL, SQLite, MongoDB, Cassandra, Redis, DynamoDB</p>
+<p><strong>Tools & Libraries:</strong> Git, GitHub, Linux, Elasticsearch, Visual Studio, Postman, Swagger, Power BI, Tableau, Selenium, Jira</p>
+<p><strong>Cloud & DevOps:</strong> Azure, AWS (EC2, S3, ECR, ECS, RDS, Lambda, CloudWatch, Glue), GitHub Actions, Docker, Kubernetes</p>
+<p><strong>AI & ML:</strong> PyTorch, TensorFlow, Scikit, Pandas, NumPy, Matplotlib, Hugging Face, Transformers, LLM, NLP, CV, Gen AI</p>
+<p><strong>Other:</strong> Backend, Distributed Systems, Debugging, Agile, SDLC, Data Analysis, Data Visualization, AI Integration</p>
+
 
 
