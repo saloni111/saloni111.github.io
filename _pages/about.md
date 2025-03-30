@@ -18,7 +18,7 @@ redirect_from:
 .section-title {
   font-size: 1.35rem;
   font-weight: 700;
-  color: #222;
+   color: #888; 
   margin-top: 2.5rem;
   margin-bottom: 1.2rem;
   display: flex;
