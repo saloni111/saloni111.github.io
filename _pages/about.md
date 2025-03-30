@@ -62,7 +62,7 @@ redirect_from:
 
 <p>
 I am a graduate student pursuing a Master of Science in Computer Science at the 
-<a href="https://bloomington.iu.edu" target="_blank" style="color: #00a6a6; font-weight: 500;">Indiana University Bloomington</a>. 
+<a href="https://bloomington.iu.edu" target="_blank" style="color: #007acc; font-weight: 500;">Indiana University Bloomington</a>. 
 With a strong background in software development and a passion for building reliable, scalable systems. 
 As a Software Engineer at UBS, I designed automation frameworks, improved system performance, and created tools used by teams across seven countries.
 </p>
