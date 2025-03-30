@@ -7,7 +7,7 @@ author_profile: true
 
 <div style="max-width: 900px; margin: auto; padding: 2rem; font-family: system-ui, sans-serif; line-height: 1.6;">
 
-  <h1 style="font-size: 2rem; margin-bottom: 0.5rem;">Work Experience 💼</h1>
+  <h1 style="font-size: 2rem; margin-bottom: 0.5rem;">Work Experience </h1>
   <p style="font-size: 1.05rem; color: #444; margin-bottom: 2.2rem;">
     From classrooms to coding cubicles — here’s where I’ve left my codeprint!
   </p>
@@ -17,7 +17,7 @@ author_profile: true
     <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap;">
       <h3 style="margin: 0; font-size: 1.2rem; font-weight: 600;">
         🧾 Software Engineer @ 
-        <a href="https://www.ubs.com/global/en.html" target="_blank" style="color: #0366d6;">Union Bank of Switzerland (UBS)</a>
+        <a href="https://www.ubs.com/global/en.html" target="_blank" style="color: #3BA3A5;">Union Bank of Switzerland (UBS)</a>
       </h3>
       <a href="/salonigandhi.github.io/files/Certificate_of_Service.pdf" target="_blank" style="font-size: 0.95rem;">Certificate</a>
     </div>
@@ -33,7 +33,7 @@ author_profile: true
     <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap;">
       <h3 style="margin: 0; font-size: 1.2rem; font-weight: 600;">
         🧾 Intern @ 
-        <a href="https://www.ubs.com/global/en.html" target="_blank" style="color: #0366d6;">Union Bank of Switzerland (UBS)</a>
+        <a href="https://www.ubs.com/global/en.html" target="_blank" style="color: #3BA3A5;">Union Bank of Switzerland (UBS)</a>
       </h3>
       <a href="/salonigandhi.github.io/files/Semester_Intern.pdf" target="_blank" style="font-size: 0.95rem;">Certificate</a>
     </div>
@@ -48,7 +48,7 @@ author_profile: true
     <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap;">
       <h3 style="margin: 0; font-size: 1.2rem; font-weight: 600;">
         🧾 Summer Intern – TOC @ 
-        <a href="https://www.ubs.com/global/en.html" target="_blank" style="color: #0366d6;">Union Bank of Switzerland (UBS)</a>
+        <a href="https://www.ubs.com/global/en.html" target="_blank" style="color: #3BA3A5;">Union Bank of Switzerland (UBS)</a>
       </h3>
       <a href="/salonigandhi.github.io/files/Summer_Intern.pdf" target="_blank" style="font-size: 0.95rem;">Certificate</a>
     </div>
@@ -63,7 +63,7 @@ author_profile: true
     <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap;">
       <h3 style="margin: 0; font-size: 1.2rem; font-weight: 600;">
         🧾 Intern @ 
-        <a href="http://www.unipune.ac.in/" target="_blank" style="color: #0366d6;">Savitribai Phule Pune University</a>
+        <a href="http://www.unipune.ac.in/" target="_blank" style="color: #3BA3A5;">Savitribai Phule Pune University</a>
       </h3>
       <a href="/salonigandhi.github.io/files/LOR.pdf" target="_blank" style="font-size: 0.95rem;">Certificate</a>
     </div>
