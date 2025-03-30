@@ -110,34 +110,26 @@ Outside of tech, I’m a national speedball player, which has taught me teamwork
 
 ---
 
-## <span class="section-title">Technical Skills</span>
+## 🛠️ Technical Skills
 
-<div class="skills-block">
-  <strong>Languages/Frameworks:</strong><br>
-  C/C++, Python, Java, JavaScript, Bash, Shell, Vue.js, Django, Flask, Node.js, LangChain
+<style>
+.skills-clean {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  padding-left: 0.5rem;
+}
+.skills-clean b {
+  font-weight: 600;
+  color: #222;
+}
+</style>
+
+<div class="skills-clean">
+  <p><b>Languages/Frameworks:</b> C/C++, Python, Java, JavaScript, Bash, Shell, Vue.js, Django, Flask, Node.js, LangChain</p>
+  <p><b>Databases:</b> PostgreSQL, MySQL, SQLite, MongoDB, Cassandra, Redis, DynamoDB</p>
+  <p><b>Tools & Libraries:</b> Git, GitHub, Linux, Elasticsearch, Visual Studio, Postman, Swagger, Power BI, Tableau, Selenium, Jira</p>
+  <p><b>Cloud & DevOps:</b> Azure, AWS (EC2, S3, ECR, ECS, RDS, Lambda, CloudWatch, Glue), GitHub Actions, Docker, Kubernetes</p>
+  <p><b>AI & ML:</b> PyTorch, TensorFlow, Scikit, Pandas, NumPy, Matplotlib, Hugging Face, Transformers, LLM, NLP, CV, Gen AI</p>
+  <p><b>Other:</b> Backend, Distributed Systems, Debugging, Agile, SDLC, Data Analysis, Data Visualization, AI Integration</p>
 </div>
 
-<div class="skills-block">
-  <strong>Databases:</strong><br>
-  PostgreSQL, MySQL, SQLite, MongoDB, Cassandra, Redis, DynamoDB
-</div>
-
-<div class="skills-block">
-  <strong>Tools & Libraries:</strong><br>
-  Git, GitHub, Linux, Elasticsearch, Visual Studio, Postman, Swagger, Power BI, Tableau, Selenium, Jira
-</div>
-
-<div class="skills-block">
-  <strong>Cloud & DevOps:</strong><br>
-  Azure, AWS (EC2, S3, ECR, ECS, RDS, Lambda, CloudWatch, Glue), GitHub Actions, Docker, Kubernetes
-</div>
-
-<div class="skills-block">
-  <strong>AI & ML:</strong><br>
-  PyTorch, TensorFlow, Scikit, Pandas, NumPy, Matplotlib, Hugging Face, Transformers, LLM, NLP, CV, Gen AI
-</div>
-
-<div class="skills-block">
-  <strong>Other:</strong><br>
-  Backend, Distributed Systems, Debugging, Agile, SDLC, Data Analysis, Data Visualization, AI Integration
-</div>
