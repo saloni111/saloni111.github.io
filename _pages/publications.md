@@ -5,7 +5,7 @@ permalink: /publications/
 author_profile: true
 ---
 
-<div style="max-width: 900px; margin: auto; padding: 2rem 1rem; font-family: system-ui, sans-serif; font-size: 1rem; line-height: 1.5; color: #333;">
+<div style="max-width: 1100px; margin: auto; padding: 2rem 1rem; font-family: system-ui, sans-serif; font-size: 1rem; line-height: 1.5; color: #333;">
 
   <h1 style="font-size: 1.7rem; font-weight: 700; margin-bottom: 0.8rem;">Work Experience</h1>
   <p style="margin-bottom: 2rem;">
@@ -57,7 +57,6 @@ author_profile: true
     <ul style="margin: 0.2rem 0 0 1.2rem; padding: 0;">
        <li>Designed and implemented the user interface for <strong>DigiTOC</strong>, a generic workflow automation tool that improved Mean Time to Resolution (MTTR) for incident handling and reduced turnaround time for user-assisted tickets.</li>
        <li>Streamlined onboarding of new automation processes by eliminating manual operations, reducing SME dependency, enabling proper audit trails, and enhancing the overall end-user experience.</li>
-</ul>
     </ul>
   </div>
 
