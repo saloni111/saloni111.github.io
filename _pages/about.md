@@ -66,6 +66,11 @@ redirect_from:
   color: var(--link-color);
   text-decoration: underline;
 }
+.skills-block {
+  margin-bottom: 1rem;
+  font-size: 0.95rem; /* match timeline-entry size */
+  line-height: 1.6;
+}  
 </style>
 
 <p>
