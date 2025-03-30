@@ -1,1 +1,1 @@
-Saloni Gandhi - Personal Website - [Click!](https://saloni111.github.io/salonigandhi.github.io/)
+Saloni Gandhi - Personal Website - [Click!](https://saloni111.github.io/)
