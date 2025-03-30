@@ -22,9 +22,11 @@ author_profile: true
       <a href="/salonigandhi.github.io/files/Certificate_of_Service.pdf" target="_blank" style="font-size: 0.9rem;" style="color: #3BA3A5;">Certificate</a>
     </div>
     <ul style="margin: 0.2rem 0 0 1.2rem; padding: 0; list-style-type: disc;">
-      <li>Built Cucumber-based automation framework executing 1,000+ test cases; caught bugs early in SDLC.</li>
-      <li>Automated ETD APAC exchange testing for 7 countries; saved 10 person-days per cycle.</li>
-      <li>Created a Python log-scraping tool adopted by 50+ users monthly across teams.</li>
+      <li>Developed and maintained automation framework (Titanium) to test different order and event flows for the Order Management System application.</li>
+      <li>Onboarded 100% controls test on Titanium framework resulting in savings of 10 person days per test cycle.</li>
+      <li>Automated tests for all ETD APAC exchange flows - Honk Kong, Australia,Japan, Singapore, India, Korea, China & India.</li> 
+      <li>Designed and delivered a utility for fetching order audit trails from different servers and presenting them in a user-friendly format; now adopted across teams as the standard log-scraping tool.</li>
+      <li>Worked in an Agile environment, collaborating closely with business representatives to deliver changes faster and improve feedback loops.</li>
     </ul>
   </div>
 
@@ -38,8 +40,8 @@ author_profile: true
       <a href="/salonigandhi.github.io/files/Semester_Intern.pdf" target="_blank" style="font-size: 0.9rem;" style="color: #3BA3A5;">Certificate</a>
     </div>
     <ul style="margin: 0.2rem 0 0 1.2rem; padding: 0;">
-      <li>Designed Java dashboards used in weekly team reports.</li>
-      <li>Developed VueJS + Java GUI for FIX message validation; improved accuracy by 95%.</li>
+       <li>Created user-friendly dashboards using Java and JFreeChart, now included in weekly team reports to provide clear insights from complex data.</li>
+       <li>Developed a GUI using VueJS and Java to highlight differences between multiple FIX (Financial Information Exchange) messages, improving the accuracy of financial data processing.</li>
     </ul>
   </div>
 
@@ -53,8 +55,9 @@ author_profile: true
       <a href="/salonigandhi.github.io/files/Summer_Intern.pdf" target="_blank" style="font-size: 0.9rem;" style="color: #3BA3A5;">Certificate</a>
     </div>
     <ul style="margin: 0.2rem 0 0 1.2rem; padding: 0;">
-      <li>Built UI for “Digi TOC” workflow automation tool; reduced ticket time by 25% and improved onboarding UX.</li>
-      <li>Improved audit tracking and reduced SME dependency for automation.</li>
+       <li>Designed and implemented the user interface for <strong>DigiTOC</strong>, a generic workflow automation tool that improved Mean Time to Resolution (MTTR) for incident handling and reduced turnaround time for user-assisted tickets.</li>
+       <li>Streamlined onboarding of new automation processes by eliminating manual operations, reducing SME dependency, enabling proper audit trails, and enhancing the overall end-user experience.</li>
+</ul>
     </ul>
   </div>
 
