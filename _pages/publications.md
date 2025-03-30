@@ -19,7 +19,7 @@ author_profile: true
         🧾 Software Engineer @ 
         <a href="https://www.ubs.com/global/en.html" target="_blank" style="color: #3BA3A5;">Union Bank of Switzerland (UBS)</a>
       </h3>
-      <a href="/salonigandhi.github.io/files/Certificate_of_Service.pdf" target="_blank" style="font-size: 0.9rem;">Certificate</a>
+      <a href="/salonigandhi.github.io/files/Certificate_of_Service.pdf" target="_blank" style="font-size: 0.9rem;" style="color: #3BA3A5;">Certificate</a>
     </div>
     <ul style="margin: 0.2rem 0 0 1.2rem; padding: 0; list-style-type: disc;">
       <li>Built Cucumber-based automation framework executing 1,000+ test cases; caught bugs early in SDLC.</li>
@@ -35,7 +35,7 @@ author_profile: true
         🧾 Intern @ 
         <a href="https://www.ubs.com/global/en.html" target="_blank" style="color: #3BA3A5;">Union Bank of Switzerland (UBS)</a>
       </h3>
-      <a href="/salonigandhi.github.io/files/Semester_Intern.pdf" target="_blank" style="font-size: 0.9rem;">Certificate</a>
+      <a href="/salonigandhi.github.io/files/Semester_Intern.pdf" target="_blank" style="font-size: 0.9rem;" style="color: #3BA3A5;">Certificate</a>
     </div>
     <ul style="margin: 0.2rem 0 0 1.2rem; padding: 0;">
       <li>Designed Java dashboards used in weekly team reports.</li>
@@ -50,7 +50,7 @@ author_profile: true
         🧾 Summer Intern – TOC @ 
         <a href="https://www.ubs.com/global/en.html" target="_blank" style="color: #3BA3A5;">Union Bank of Switzerland (UBS)</a>
       </h3>
-      <a href="/salonigandhi.github.io/files/Summer_Intern.pdf" target="_blank" style="font-size: 0.9rem;">Certificate</a>
+      <a href="/salonigandhi.github.io/files/Summer_Intern.pdf" target="_blank" style="font-size: 0.9rem;" style="color: #3BA3A5;">Certificate</a>
     </div>
     <ul style="margin: 0.2rem 0 0 1.2rem; padding: 0;">
       <li>Built UI for “Digi TOC” workflow automation tool; reduced ticket time by 25% and improved onboarding UX.</li>
@@ -65,7 +65,7 @@ author_profile: true
         🧾 Intern @ 
         <a href="http://www.unipune.ac.in/" target="_blank" style="color: #3BA3A5;">Savitribai Phule Pune University</a>
       </h3>
-      <a href="/salonigandhi.github.io/files/LOR.pdf" target="_blank" style="font-size: 0.9rem;">Certificate</a>
+      <a href="/salonigandhi.github.io/files/LOR.pdf" target="_blank" style="font-size: 0.9rem;" style="color: #3BA3A5;">Certificate</a>
     </div>
     <ul style="margin: 0.2rem 0 0 1.2rem; padding: 0;">
       <li>Launched e-learning app with real-time quiz editing; adopted by 20+ institutions.</li>
