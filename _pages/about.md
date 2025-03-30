@@ -10,9 +10,17 @@ redirect_from:
 ---
 
 <style>
-/* Timeline Style */
+/* THEME COLORS */
+:root {
+  --primary: #0066ff;
+  --secondary: #e63946;
+  --gray: #444;
+  --light-gray: #f5f5f5;
+}
+
+/* Timeline Styling */
 .timeline {
-  border-left: 3px solid #0366d6;
+  border-left: 3px solid var(--primary);
   padding-left: 1.2rem;
   margin-top: 2rem;
 }
@@ -27,7 +35,7 @@ redirect_from:
   top: 5px;
   width: 12px;
   height: 12px;
-  background: #0366d6;
+  background: var(--primary);
   border-radius: 50%;
   border: 2px solid white;
 }
@@ -43,27 +51,31 @@ redirect_from:
   font-size: 0.9rem;
 }
 
-/* Skills Style */
-.skills-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1rem;
-  margin-top: 1.5rem;
+/* Section headers */
+.section-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  color: var(--primary);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
-.skills-grid strong {
-  color: #0366d6;
+.section-title::before {
+  content: "🛠️";
 }
-.skills-grid code {
-  background-color: #f3f3f3;
-  padding: 0.2rem 0.4rem;
-  margin: 0.1rem;
-  display: inline-block;
-  border-radius: 3px;
+
+/* Skills block styling */
+.skills-block {
+  background: var(--light-gray);
+  border-left: 4px solid var(--secondary);
+  padding: 1rem 1rem 1rem 1.5rem;
+  margin-bottom: 1rem;
+  line-height: 1.6;
 }
-@media (min-width: 600px) {
-  .skills-grid {
-    grid-template-columns: 1fr 1fr;
-  }
+.skills-block strong {
+  color: var(--secondary);
 }
 </style>
 
@@ -81,7 +93,7 @@ Outside of tech, I’m a national speedball player, which has taught me teamwork
 
 ---
 
-## 🧠 Work Experience
+## <span class="section-title">Work Experience</span>
 
 <div class="timeline">
   <div class="timeline-entry">
@@ -104,23 +116,34 @@ Outside of tech, I’m a national speedball player, which has taught me teamwork
 
 ---
 
-## 🧰 Technical Skills
+## <span class="section-title">Technical Skills</span>
 
-<div class="skills-grid">
-  <div><strong>Languages & Frameworks:</strong><br>
-    <code>Python</code><code>Java</code><code>C</code><code>C++</code><code>JavaScript</code><code>Vue.js</code><code>Node.js</code><code>Shell</code><code>Django</code><code>Flask</code>
-  </div>
-  <div><strong>Tools & Platforms:</strong><br>
-    <code>Git</code><code>GitHub</code><code>Linux</code><code>Postman</code><code>Swagger</code><code>Selenium</code><code>Jira</code><code>Power BI</code><code>Streamlit</code>
-  </div>
-  <div><strong>Databases:</strong><br>
-    <code>MySQL</code><code>PostgreSQL</code><code>MongoDB</code>
-  </div>
-  <div><strong>Cloud & DevOps:</strong><br>
-    <code>AWS (EC2, S3, RDS, Lambda)</code><code>Azure</code><code>Docker</code><code>GitHub Actions</code>
-  </div>
-  <div><strong>AI & ML:</strong><br>
-    <code>TensorFlow</code><code>OpenCV</code><code>Scikit-learn</code><code>LangChain</code><code>Google GenAI</code><code>NLP</code><code>CV</code>
-  </div>
+<div class="skills-block">
+  <strong>Languages/Frameworks:</strong><br>
+  C/C++, Python, Java, JavaScript, Bash, Shell, Vue.js, Django, Flask, Node.js, LangChain
 </div>
 
+<div class="skills-block">
+  <strong>Database:</strong><br>
+  PostgreSQL, MySQL, SQLite, MongoDB, Cassandra, Redis, DynamoDB
+</div>
+
+<div class="skills-block">
+  <strong>Tools & Libraries:</strong><br>
+  Git, GitHub, Linux, Elasticsearch, Visual Studio, Postman, Swagger, Power BI, Tableau, Selenium, Jira
+</div>
+
+<div class="skills-block">
+  <strong>Cloud & DevOps:</strong><br>
+  Azure, AWS (EC2, S3, ECR, ECS, RDS, Lambda, CloudWatch, Glue), GitHub Actions, Docker, Kubernetes
+</div>
+
+<div class="skills-block">
+  <strong>AI & ML:</strong><br>
+  PyTorch, TensorFlow, Scikit, Pandas, NumPy, Matplotlib, Hugging Face, Transformers, LLM, NLP, CV, Gen AI
+</div>
+
+<div class="skills-block">
+  <strong>Other:</strong><br>
+  Backend, Distributed Systems, Debugging, Agile, SDLC, Data Analysis, Data Visualization, AI Integration
+</div>
