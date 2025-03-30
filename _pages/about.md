@@ -89,7 +89,7 @@ Outside of tech, I’m a national speedball player, which has taught me teamwork
 </p>
 
 <!-- Work Experience Section -->
-<h2 class="section-title">Work Experience</h2>
+<h2 class="section-title">🧑‍💻 Work Experience</h2>
 <div class="timeline">
   <div class="timeline-entry">
     <span>Jul 2022 – Jul 2024</span>
@@ -110,7 +110,7 @@ Outside of tech, I’m a national speedball player, which has taught me teamwork
 </div>
 
 <!-- Technical Skills -->
-<h2 class="section-title">Technical Skills</h2>
+<h2 class="section-title">🛠️ Technical Skills</h2>
 <div class="skills-block"><strong>Languages/Frameworks:</strong> C/C++, Python, Java, JavaScript, Bash, Shell, Vue.js, Django, Flask, Node.js, LangChain</div>
 <div class="skills-block"><strong>Databases:</strong> PostgreSQL, MySQL, SQLite, MongoDB, Cassandra, Redis, DynamoDB</div>
 <div class="skills-block"><strong>Tools & Libraries:</strong> Git, GitHub, Linux, Elasticsearch, Visual Studio, Postman, Swagger, Power BI, Tableau, Selenium, Jira</div>
