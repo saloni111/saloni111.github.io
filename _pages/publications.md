@@ -73,7 +73,8 @@ author_profile: true
   </div>
   <p style="font-size: 0.95rem; color: #555; margin-top: 0.2rem;">Technologies: Node.js, Express.js, React.js, MongoDB, WebSockets (Socket.io), AWS</p>
   <ul style="margin: 0.2rem 0 0 1.2rem; padding: 0;">
-    <li>Launched an e-learning app with real-time quiz editing, adopted by 20+ institutions.</li>
-    <li>Developed a scalable Node.js API supporting real-time data for 2,000+ users.</li>
+    <li>Developed a full-stack interactive e-learning web application to enrich the teaching experience and engagement for secondary and high school classrooms.</li>
+    <li>Enabled real-time quiz editing for teachers during live assessments, making the platform more adaptive and flexible for remote learning.</li>
+    <li>Engineered a responsive backend using Node.js and WebSockets to support real-time communication, while optimizing system performance with caching, efficient database queries, and AWS-based deployment with load balancing.</li>
   </ul>
 </div>
