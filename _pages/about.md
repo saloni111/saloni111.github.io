@@ -67,11 +67,11 @@ redirect_from:
 </style>
 
 <p>
-I'm a Backend & Cloud Engineer passionate about building reliable, scalable systems that solve real-world problems. I've developed automation frameworks that streamline trading flows for global investment banks, designed AI models that help detect eye diseases faster, and built backend tools for high-performance, real-time applications.
+I’m a Backend & Cloud Engineer with a focus on building scalable, reliable systems that solve real-world problems. I’ve designed automation frameworks used across investment banks, trained AI models to help doctors detect eye diseases faster, and developed backend tools that support high-performance, real-time applications.
 </p>
 
 <p>
-My strength lies in backend development, distributed systems, and cloud infrastructure—especially with AWS, Python, Java, and C++. I enjoy working on projects that combine clean architecture with AI, cloud computing, and performance optimization.
+My strengths lie in backend development, distributed systems, and cloud infrastructure — especially with AWS, C++, Python, Java, and tools like Docker, Kubernetes, and TensorFlow. I enjoy working on projects that blend clean architecture, AI, and system performance. 
 </p>
 
 <p>
@@ -79,15 +79,11 @@ Currently, I’m pursuing my Master’s in Computer Science at <a href="https://
 </p>
 
 <p>
-What sets me apart? I'm hands-on, detail-oriented, and always looking for ways to make systems faster, cleaner, and easier to maintain. I enjoy breaking down complex problems, designing clean APIs, and pushing ideas into production.
+What sets me apart? I’m hands-on, detail-driven, and always thinking about how to make systems better — more efficient, more scalable, and easier to maintain. I care about writing clean code, building things that last, and pushing ideas into production.
 </p>
 
 <p>
-Outside of tech, I'm a national-level speedball player. The discipline and focus I’ve learned from competitive sports shape the way I approach coding—precise, goal-driven, and always evolving.
-</p>
-
-<p>
-I’ve built projects that range from an AI-based retinal image analyzer, a real-time sign language translator, and a code converter that transforms legacy C code into Java and Python. Whether it's building distributed systems, fine-tuning ML models, or exploring cloud automation, I love learning and building impactful things along the way.
+Outside of tech, I’m a national-level speedball player, and I bring the same focus and discipline from sports into every line of code I write.
 </p>
 
 <!-- Work Experience Section -->
