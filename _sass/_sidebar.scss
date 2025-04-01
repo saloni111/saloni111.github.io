@@ -72,8 +72,8 @@
 .author__avatar {
   display: table-cell;
   vertical-align: top;
-  width: 450px;
-  height: 450px; /* ensure it's square */
+  width: 950px;
+  height: 1000px; /* ensure it's square */
   border-radius: 50%; /* optional: keep it circular */
   object-fit: cover;  /* optional: crop and center the image nicely */
 
@@ -84,7 +84,7 @@
   }
 
   img {
-    max-width: 300px;
+    max-width: 950px;
     border-radius: 50%;
 
     @include breakpoint($large) {
