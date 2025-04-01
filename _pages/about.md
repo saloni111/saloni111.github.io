@@ -73,20 +73,24 @@ redirect_from:
 }  
 </style>
 
-<p>
-I’m a Backend & Cloud Engineer with a focus on building scalable, reliable systems that solve real-world problems. I’ve built end-to-end automation frameworks for order management systems used in global investment banking workflows, trained AI models to help doctors detect eye diseases faster, and developed backend tools that support high-performance, real-time applications.
-
-My strengths lie in backend development, distributed systems, and cloud infrastructure — especially with AWS, C++, Python, Java, and tools like Docker, Kubernetes, and TensorFlow. I enjoy working on projects that blend clean architecture, AI, and system performance.
-
-Currently, I’m pursuing my Master’s in Computer Science at <a href="https://bloomington.iu.edu" target="_blank" style="color: #3BA3A5; font-weight: 500;">Indiana University Bloomington</a>, diving deeper into cloud-native engineering, AI integration, and large-scale systems.
-
-What sets me apart? I’m hands-on, detail-driven, and always thinking about how to make systems better — more efficient, more scalable, and easier to maintain. I care about writing clean code, building things that last, and pushing ideas into production.
-
-Outside of tech, I’m a national-level speedball player, and I bring the same focus and discipline from sports into every line of code I write.
+<p style="font-size: 1rem; color: #484D52; line-height: 1.6; margin-bottom: 1.2rem;">
+I’m a Backend & Cloud Engineer passionate about building scalable systems that solve real-world problems. I’ve developed end-to-end automation frameworks for global investment banking platforms, trained AI models for medical diagnostics, and built backend systems for real-time apps used by thousands.
 </p>
 
-<p>
-I’ve worked on a variety of projects, including an AI-based tool for detecting eye diseases, a language converter that transforms C code into Java and Python, and dashboards that simplify complex financial data. I enjoy breaking down problems, writing clean code, and learning new technologies as I go.
+<p style="font-size: 1rem; color: #484D52; line-height: 1.6; margin-bottom: 1.2rem;">
+My strengths lie in backend engineering, distributed systems, and cloud-native infrastructure — especially with AWS, Python, Java, and tools like Docker, Kubernetes, and TensorFlow. I enjoy creating reliable systems that blend clean architecture, performance, and AI.
+</p>
+
+<p style="font-size: 1rem; color: #484D52; line-height: 1.6; margin-bottom: 1.2rem;">
+Currently, I’m pursuing my Master's in Computer Science at <a href="https://bloomington.iu.edu" target="_blank" style="color: #3BA3A5; font-weight: 500;">Indiana University Bloomington</a>, diving deeper into cloud engineering, AI integration, and high-performance system design.
+</p>
+
+<p style="font-size: 1rem; color: #484D52; line-height: 1.6; margin-bottom: 1.2rem;">
+What sets me apart is my hands-on approach, attention to detail, and the drive to build systems that are not only functional, but efficient, scalable, and easy to maintain. I’m a clean-code advocate who’s passionate about pushing ideas from prototype to production.
+</p>
+
+<p style="font-size: 1rem; color: #484D52; line-height: 1.6; margin-bottom: 1.2rem;">
+Outside of tech, I’m a national speedball player — a sport that’s taught me discipline, focus, and grit — values I carry into every project I work on.
 </p>
 
 <p>
