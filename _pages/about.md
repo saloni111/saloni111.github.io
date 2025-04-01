@@ -4,10 +4,11 @@ permalink: /
 title: "Saloni Gandhi"
 excerpt: "About me"
 author_profile: true
-redirect_from: 
+redirect_from:
   - /about/
   - /about.html
 ---
+
 <style>
 :root {
   --link-color: #00a6a6;
@@ -18,22 +19,12 @@ redirect_from:
 .section-title {
   font-size: 1.35rem;
   font-weight: 700;
-   color: #484D52; 
+  color: #484D52;
   margin-top: 2.5rem;
   margin-bottom: 1.2rem;
   display: flex;
   align-items: center;
   gap: 0.5rem;
-}
-
-/* Work Experience Title */
-.work-title::before {
-  content: "🧑‍💻";
-}
-
-/* Technical Skills Title */
-.tech-title::before {
-  content: "🛠️";
 }
 
 /* Timeline line and dots */
@@ -66,35 +57,37 @@ redirect_from:
   color: var(--link-color);
   text-decoration: underline;
 }
+
+/* Skills styling */
 .skills-block {
   margin-bottom: 1rem;
-  font-size: 0.95rem; /* match timeline-entry size */
+  font-size: 0.95rem;
   line-height: 1.6;
-}  
+}
 </style>
 
-<p style="font-size: 1rem; color: #484D52; line-height: 1.6; margin-bottom: 1.2rem;">
-I’m a Backend & Cloud Engineer passionate about building scalable systems that solve real-world problems. I’ve developed end-to-end automation frameworks for global investment banking platforms, trained AI models for medical diagnostics, and built backend systems for real-time apps used by thousands.
-</p>
-
-<p style="font-size: 1rem; color: #484D52; line-height: 1.6; margin-bottom: 1.2rem;">
-My strengths lie in backend engineering, distributed systems, and cloud-native infrastructure — especially with AWS, Python, Java, and tools like Docker, Kubernetes, and TensorFlow. I enjoy creating reliable systems that blend clean architecture, performance, and AI.
-</p>
-
-<p style="font-size: 1rem; color: #484D52; line-height: 1.6; margin-bottom: 1.2rem;">
-Currently, I’m pursuing my Master's in Computer Science at <a href="https://bloomington.iu.edu" target="_blank" style="color: #3BA3A5; font-weight: 500;">Indiana University Bloomington</a>, diving deeper into cloud engineering, AI integration, and high-performance system design.
-</p>
-
-<p style="font-size: 1rem; color: #484D52; line-height: 1.6; margin-bottom: 1.2rem;">
-What sets me apart is my hands-on approach, attention to detail, and the drive to build systems that are not only functional, but efficient, scalable, and easy to maintain. I’m a clean-code advocate who’s passionate about pushing ideas from prototype to production.
-</p>
-
-<p style="font-size: 1rem; color: #484D52; line-height: 1.6; margin-bottom: 1.2rem;">
-Outside of tech, I’m a national speedball player — a sport that’s taught me discipline, focus, and grit — values I carry into every project I work on.
+<p>
+I'm a Backend & Cloud Engineer passionate about building reliable, scalable systems that solve real-world problems. I've developed automation frameworks that streamline trading flows for global investment banks, designed AI models that help detect eye diseases faster, and built backend tools for high-performance, real-time applications.
 </p>
 
 <p>
-Outside of tech, I’m a national speedball player, which has taught me teamwork, focus, and discipline.
+My strength lies in backend development, distributed systems, and cloud infrastructure—especially with AWS, Python, Java, and C++. I enjoy working on projects that combine clean architecture with AI, cloud computing, and performance optimization.
+</p>
+
+<p>
+Currently, I’m pursuing my Master’s in Computer Science at <a href="https://bloomington.iu.edu" target="_blank" style="color: #3BA3A5; font-weight: 500;">Indiana University Bloomington</a>, where I’m exploring cloud-native engineering, AI integration, and large-scale system design.
+</p>
+
+<p>
+What sets me apart? I'm hands-on, detail-oriented, and always looking for ways to make systems faster, cleaner, and easier to maintain. I enjoy breaking down complex problems, designing clean APIs, and pushing ideas into production.
+</p>
+
+<p>
+Outside of tech, I'm a national-level speedball player. The discipline and focus I’ve learned from competitive sports shape the way I approach coding—precise, goal-driven, and always evolving.
+</p>
+
+<p>
+I’ve built projects that range from an AI-based retinal image analyzer, a real-time sign language translator, and a code converter that transforms legacy C code into Java and Python. Whether it's building distributed systems, fine-tuning ML models, or exploring cloud automation, I love learning and building impactful things along the way.
 </p>
 
 <!-- Work Experience Section -->
@@ -125,4 +118,4 @@ Outside of tech, I’m a national speedball player, which has taught me teamwork
 <div class="skills-block"><strong>Tools & Libraries:</strong> Git, GitHub, Linux, Elasticsearch, Visual Studio, Postman, Swagger, Power BI, Tableau, Selenium, Jira</div>
 <div class="skills-block"><strong>Cloud & DevOps:</strong> Azure, AWS (EC2, S3, ECR, ECS, RDS, Lambda, CloudWatch, Glue), GitHub Actions, Docker, Kubernetes</div>
 <div class="skills-block"><strong>AI & ML:</strong> PyTorch, TensorFlow, Scikit, Pandas, NumPy, Matplotlib, Hugging Face, Transformers, LLM, NLP, CV, Gen AI</div>
-<div class="skills-block"><strong>Other:</strong> Backend, Distributed Systems, Debugging, Agile, SDLC, Data Analysis, Data Visualization, AI Integration</div>
+<div class="skills-block"><strong>Other:</strong> Backend Development, Distributed Systems, Debugging, Agile, SDLC, Data Analysis, Data Visualization, API Design</div>
