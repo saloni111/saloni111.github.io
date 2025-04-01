@@ -97,15 +97,15 @@ Outside of tech, I’m a national speedball player, which has taught me teamwork
   </div>
   <div class="timeline-entry">
     <span>Jan 2022 – Jun 2022</span>
-    <div>Intern – Market Access Group @ <a href="https://www.ubs.com/global/en.html" target="_blank">UBS</a></div>
+    <div>Software Co-op @ <a href="https://www.ubs.com/global/en.html" target="_blank">UBS</a></div>
   </div>
   <div class="timeline-entry">
     <span>Jun 2021 – Aug 2021</span>
-    <div>Summer Intern – Technology Operations Center @ <a href="https://www.ubs.com/global/en.html" target="_blank">UBS</a></div>
+    <div>Software Intern @ <a href="https://www.ubs.com/global/en.html" target="_blank">UBS</a></div>
   </div>
   <div class="timeline-entry">
     <span>Apr 2020 – Nov 2020</span>
-    <div>Intern @ <a href="http://www.unipune.ac.in/" target="_blank">Savitribai Phule Pune University</a></div>
+    <div>Software Intern @ <a href="http://www.unipune.ac.in/" target="_blank">Savitribai Phule Pune University</a></div>
   </div>
 </div>
 
