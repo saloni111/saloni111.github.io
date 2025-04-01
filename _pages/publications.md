@@ -6,7 +6,7 @@ author_profile: true
 ---
 <div style="max-width: 1100px; margin: auto; padding: 2rem 1rem; font-family: system-ui, sans-serif; font-size: 1rem; line-height: 1.5; color: #484D52;">
 
-<h1 style="font-size: 1.7rem; font-weight: 700; margin-bottom: 0.8rem;">Work Experience</h1>
+<h1 style="font-size: 1.7rem; font-weight: 700; margin-bottom: 0.8rem;">Work Experience 🧑‍💻</h1>
 <p style="margin-bottom: 2rem;">
    From classrooms to coding cubicles — here’s where I’ve left my codeprint!
 </p>
