@@ -77,6 +77,7 @@ redirect_from:
 I’m a Backend & Cloud Engineer with a focus on building scalable, reliable systems that solve real-world problems. I’ve built end-to-end automation frameworks for order management systems used in global investment banking workflows, trained AI models to help doctors detect eye diseases faster, and developed backend tools that support high-performance, real-time applications.
 
 My strengths lie in backend development, distributed systems, and cloud infrastructure — especially with AWS, C++, Python, Java, and tools like Docker, Kubernetes, and TensorFlow. I enjoy working on projects that blend clean architecture, AI, and system performance.
+
 Currently, I’m pursuing my Master’s in Computer Science at <a href="https://bloomington.iu.edu" target="_blank" style="color: #3BA3A5; font-weight: 500;">Indiana University Bloomington</a>, diving deeper into cloud-native engineering, AI integration, and large-scale systems.
 
 What sets me apart? I’m hands-on, detail-driven, and always thinking about how to make systems better — more efficient, more scalable, and easier to maintain. I care about writing clean code, building things that last, and pushing ideas into production.
