@@ -67,7 +67,7 @@ redirect_from:
 </style>
 
 <p>
-I’m a Backend & Cloud Engineer with a focus on building scalable, reliable systems that solve real-world problems. I’ve designed automation frameworks used across investment banks, trained AI models to help doctors detect eye diseases faster, and developed backend tools that support high-performance, real-time applications.
+I’m a Backend & Cloud Engineer with a focus on building scalable, reliable systems that solve real-world problems. I’ve built end-to-end automation frameworks for order management systems used in global investment banking workflows, trained AI models to help doctors detect eye diseases faster, and developed backend tools that support high-performance, real-time applications.
 </p>
 
 <p>
