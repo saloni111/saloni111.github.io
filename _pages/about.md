@@ -109,7 +109,7 @@ Outside of tech, I’m a national-level speedball player, and I bring the same f
 
 <!-- Technical Skills -->
 <h2 class="section-title">🛠️ Technical Skills</h2>
-<div class="skills-block"><strong>Languages/Frameworks:</strong> C/C++, Python, Java, JavaScript, Bash, Shell, Vue.js, Django, Flask, Node.js, LangChain</div>
+<div class="skills-block"><strong>Languages/Frameworks:</strong> C/C++, Python, Java, JavaScript, Go, Bash, Shell, Vue.js, Django, Flask, Node.js, LangChain</div>
 <div class="skills-block"><strong>Databases:</strong> PostgreSQL, MySQL, SQLite, MongoDB, Cassandra, Redis, DynamoDB</div>
 <div class="skills-block"><strong>Tools & Libraries:</strong> Git, GitHub, Linux, Elasticsearch, Visual Studio, Postman, Swagger, Power BI, Tableau, Selenium, Jira</div>
 <div class="skills-block"><strong>Cloud & DevOps:</strong> Azure, AWS (EC2, S3, ECR, ECS, RDS, Lambda, CloudWatch, Glue), GitHub Actions, Docker, Kubernetes</div>
