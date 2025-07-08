@@ -10,7 +10,24 @@ author_profile: true
 <p style="margin-bottom: 2rem;">
    From classrooms to coding cubicles — here’s where I’ve left my codeprint!
 </p>
-    
+
+<!-- Intern -->
+<div style="margin-bottom: 2rem;">
+  <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap;">
+    <h3 style="margin: 0 0 0.3rem 0; font-size: 1.05rem; font-weight: 600;">
+      🧾 Software Engineer Intern @ 
+      <a href="https://astral.trading" target="_blank" style="color: #3BA3A5;">Astral Trading Inc.</a>
+    </h3>
+  </div>
+  <p style="font-size: 0.95rem; color: #555; margin-top: 0.2rem;">Technologies: C++, Python, Go, AWS, Kafka, Git</p>
+  <ul style="margin: 0.2rem 0 0 1.2rem; padding: 0;">
+    <li>Built a multithreaded real-time trading engine in Go, Kafka, & AWS SQS to ingest high-frequency market data; reduced
+strategy reprocessing time from 2 mins to sub-ms latency & improved throughput by 40%.</li>
+    <li>Implemented distributed strategy orchestration and optimized trade execution using Python and C++, integrating with REST
+APIs and Grafana to ensure observability, fault-tolerance, and 99.9% production uptime.</li>
+  </ul>
+</div>
+
 <!-- Software Engineer -->
 <div style="margin-bottom: 2rem;">
   <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap;">
@@ -34,7 +51,7 @@ author_profile: true
 <div style="margin-bottom: 2rem;">
   <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap;">
     <h3 style="margin: 0 0 0.3rem 0; font-size: 1.05rem; font-weight: 600;">
-      🧾 Software Co-op @ 
+      🧾 Software Engineer Co-op @ 
       <a href="https://www.ubs.com/global/en.html" target="_blank" style="color: #3BA3A5;">Union Bank of Switzerland (UBS)</a>
     </h3>
      <a href="/files/Semester_Intern.pdf" target="_blank" style="font-size: 0.9rem; color: #3BA3A5;">Certificate</a>
@@ -50,7 +67,7 @@ author_profile: true
 <div style="margin-bottom: 2rem;">
   <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap;">
     <h3 style="margin: 0 0 0.3rem 0; font-size: 1.05rem; font-weight: 600;">
-      🧾 Software Intern – TOC @ 
+      🧾 Software Engineer Intern – TOC @ 
       <a href="https://www.ubs.com/global/en.html" target="_blank" style="color: #3BA3A5;">Union Bank of Switzerland (UBS)</a>
     </h3>
     <a href="/files/Summer_Intern.pdf" target="_blank" style="font-size: 0.9rem; color: #3BA3A5;">Certificate</a> 
@@ -66,7 +83,7 @@ author_profile: true
 <div>
   <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap;">
     <h3 style="margin: 0 0 0.3rem 0; font-size: 1.05rem; font-weight: 600;">
-      🧾 Software Intern @ 
+      🧾 Software Engineer Intern @ 
       <a href="http://www.unipune.ac.in/" target="_blank" style="color: #3BA3A5;">Savitribai Phule Pune University</a>
     </h3>
     <a href="/files/LOR.pdf" target="_blank" style="font-size: 0.9rem; color: #3BA3A5;">Certificate</a> 
