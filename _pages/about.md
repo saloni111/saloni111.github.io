@@ -91,7 +91,7 @@ Outside of tech, I’m a national-level speedball player, and I bring the same f
 <div class="timeline">
   <div class="timeline-entry">
     <span>Jun 2025 – Present</span>
-    <div>Software Engineer Intern @ <a href="https://astral.trading" target="_blank">Astral Inc.</a></div>
+    <div>Software Engineer Intern @ <a href="https://astral.trading" target="_blank">Astral Trading Inc.</a></div>
   </div>
   <div class="timeline-entry">
     <span>Jul 2022 – Jul 2024</span>
