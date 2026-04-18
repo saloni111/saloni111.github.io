@@ -98,14 +98,14 @@ $(document).ready(function(){
     $(".resume-access-modal__success-detail").html(
       "Copy the line below and send it to <strong>" + ownerEmail + "</strong>."
     );
-    var line = "Résumé request — please reply to: " + email + (name ? " — " + name : "");
+    var line = "Resume request — please reply to: " + email + (name ? " — " + name : "");
     $(".resume-access-modal__copy-text").val(line);
     $(".resume-access-modal__copy-block").removeAttr("hidden");
     $(".resume-access-modal__copy-btn").trigger("focus");
   }
 
   function openMailtoResumeRequest(name, email, ownerEmail, siteLabel) {
-    var body = "Hello,\n\nI’d like a copy of your résumé";
+    var body = "Hello,\n\nI’d like a copy of your resume";
     if (siteLabel) {
       body += " (" + siteLabel + ")";
     }
@@ -117,7 +117,7 @@ $(document).ready(function(){
       "mailto:" +
       ownerEmail +
       "?subject=" +
-      encodeURIComponent("Résumé request") +
+      encodeURIComponent("Resume request") +
       "&body=" +
       encodeURIComponent(body);
     showResumeRequestSuccess(
@@ -135,12 +135,12 @@ $(document).ready(function(){
       },
       body: JSON.stringify({
         access_key: accessKey,
-        subject: "Résumé request — " + (siteLabel || "Portfolio"),
+        subject: "Resume request — " + (siteLabel || "Portfolio"),
         name: name || "Portfolio visitor",
         email: email,
         replyto: email,
         message: messageBody,
-        from_name: name || "Résumé request",
+        from_name: name || "Resume request",
         botcheck: false
       })
     }).then(function(r) {
@@ -155,7 +155,7 @@ $(document).ready(function(){
 
   function submitFormspree(endpoint, email, name, messageBody, siteLabel) {
     var fd = new FormData();
-    fd.append("_subject", "Résumé request — " + (siteLabel || "Portfolio"));
+    fd.append("_subject", "Resume request — " + (siteLabel || "Portfolio"));
     fd.append("email", email);
     fd.append("name", name);
     fd.append("message", messageBody);
@@ -206,7 +206,7 @@ $(document).ready(function(){
     }
 
     var messageBody =
-      "Résumé access request from your portfolio.\n\n" +
+      "Resume access request from your portfolio.\n\n" +
       "Work email (reply here): " +
       email +
       "\n" +
@@ -223,7 +223,7 @@ $(document).ready(function(){
 
     function ok() {
       restoreBtn();
-      showResumeRequestSuccess("Thank you", "You’ll get the résumé by email shortly.");
+      showResumeRequestSuccess("Thank you", "You’ll get the resume by email shortly.");
     }
 
     function fail() {
@@ -277,7 +277,7 @@ $(document).ready(function(){
     if (ownerEmail) {
       openMailtoResumeRequest(name, email, ownerEmail, siteLabel);
     } else {
-      showResumeRequestSuccess("Unavailable", "Résumé requests are not configured.");
+      showResumeRequestSuccess("Unavailable", "Resume requests are not configured.");
     }
     restoreBtn();
     return false;
@@ -346,7 +346,7 @@ $(document).ready(function(){
     $(".author__urls-wrapper button").toggleClass("open");
   });
 
-  // init smooth scroll (skip résumé modal nav — it uses in-page dialog)
+  // init smooth scroll (skip resume modal nav — it uses in-page dialog)
   $("a").not(".masthead__link--resume-modal").smoothScroll({offset: -20});
 
   // add lightbox class to all image links
