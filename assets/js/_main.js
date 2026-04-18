@@ -121,8 +121,8 @@ $(document).ready(function(){
       "&body=" +
       encodeURIComponent(body);
     showResumeRequestSuccess(
-      "Almost done",
-      "Your email app should open — send the message and you’re all set."
+      "Thank you",
+      "Your email app should open — hit send and you’re done."
     );
   }
 
@@ -223,7 +223,7 @@ $(document).ready(function(){
 
     function ok() {
       restoreBtn();
-      showResumeRequestSuccess("Request sent", "Thanks — you’ll get my résumé by email shortly.");
+      showResumeRequestSuccess("Thank you", "You’ll get the résumé by email shortly.");
     }
 
     function fail() {
