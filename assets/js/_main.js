@@ -57,8 +57,44 @@ $(document).ready(function(){
     $(".author__urls-wrapper button").toggleClass("open");
   });
 
-  // init smooth scroll
-  $("a").smoothScroll({offset: -20});
+  // init smooth scroll (exclude resume modal trigger)
+  $("a").not(".masthead__link--resume-access").smoothScroll({offset: -20});
+
+  // Resume "request access" modal (Drive-style)
+  var $resumeModal = $("#resume-access-dialog");
+  var lastResumeTrigger = null;
+
+  function openResumeModal() {
+    $resumeModal.removeAttr("hidden").attr("aria-hidden", "false");
+    $(".masthead__link--resume-access").attr("aria-expanded", "true");
+    $("body").addClass("resume-modal-open");
+    $resumeModal.find(".resume-access-modal__close").first().trigger("focus");
+  }
+
+  function closeResumeModal() {
+    $resumeModal.attr("hidden", "").attr("aria-hidden", "true");
+    $(".masthead__link--resume-access").attr("aria-expanded", "false");
+    $("body").removeClass("resume-modal-open");
+    if (lastResumeTrigger) {
+      $(lastResumeTrigger).trigger("focus");
+    }
+  }
+
+  $(document).on("click", ".masthead__link--resume-access", function(e) {
+    e.preventDefault();
+    lastResumeTrigger = this;
+    openResumeModal();
+  });
+
+  $(document).on("click", "[data-resume-modal-dismiss]", function() {
+    closeResumeModal();
+  });
+
+  $(document).on("keydown", function(e) {
+    if (e.keyCode === 27 && !$resumeModal.is("[hidden]")) {
+      closeResumeModal();
+    }
+  });
 
   // add lightbox class to all image links
   $("a[href$='.jpg'],a[href$='.jpeg'],a[href$='.JPG'],a[href$='.png'],a[href$='.gif']").addClass("image-popup");

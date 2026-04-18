@@ -6,8 +6,8 @@ main:
   - title: "Work Experience"
     url: /publications/
 
-  - title: "Résumé (available on request)"
-    url: "mailto:smgandhi@iu.edu?subject=Resume%20request"
+  - title: "Resume"
+    resume_modal: true
 
   # - title: "Cool Stuff!"
   #  url: /cool-stuff/ 
