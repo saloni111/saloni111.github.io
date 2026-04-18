@@ -49,11 +49,25 @@ $(document).ready(function(){
     dlg.removeAttribute("hidden");
     $resumeModal.attr("aria-hidden", "false");
     $("body").addClass("resume-modal-open");
-    var $name = $("#resume-req-name");
-    if ($name.length) {
-      $name.trigger("focus");
+    var $email = $("#resume-req-email");
+    if ($email.length) {
+      $email.trigger("focus");
     } else {
       $resumeModal.find(".resume-access-modal__close").first().trigger("focus");
+    }
+  }
+
+  function focusResumeNavLink() {
+    var $modalLink = $(".masthead__link--resume-modal");
+    if ($modalLink.length) {
+      $modalLink.first().trigger("focus");
+      return;
+    }
+    if ($("body").is("[data-resume-autopen]")) {
+      var $navResume = $("#site-nav a[href*='/resume']");
+      if ($navResume.length) {
+        $navResume.first().trigger("focus");
+      }
     }
   }
 
@@ -65,42 +79,105 @@ $(document).ready(function(){
     $resumeModal.attr("hidden", "").attr("aria-hidden", "true");
     $("body").removeClass("resume-modal-open");
     resetResumeModal();
-    if ($("body").is("[data-resume-autopen]")) {
-      var $navResume = $("#site-nav a[href*='/resume']");
-      if ($navResume.length) {
-        $navResume.first().trigger("focus");
-      }
-    }
+    focusResumeNavLink();
   }
 
-  function showResumeFormspreeSuccess() {
+  function showResumeRequestSuccess(title, detail) {
     $(".resume-access-modal__step--form").attr("hidden", "");
     $(".resume-access-modal__step--thanks").removeAttr("hidden");
-    $(".resume-access-modal__success-title").text("Request sent");
-    $(".resume-access-modal__success-detail").text("Thanks — the owner will get your message by email.");
+    $(".resume-access-modal__success-title").text(title);
+    $(".resume-access-modal__success-detail").text(detail);
     $(".resume-access-modal__copy-block").attr("hidden", "");
     $(".resume-access-modal__done").trigger("focus");
   }
 
-  function showResumeCopyFallback(name, email, msg, ownerEmail) {
+  function showResumeFailureCopy(name, email, ownerEmail) {
     $(".resume-access-modal__step--form").attr("hidden", "");
     $(".resume-access-modal__step--thanks").removeAttr("hidden");
-    $(".resume-access-modal__success-title").text("Copy your request");
+    $(".resume-access-modal__success-title").text("One more step");
     $(".resume-access-modal__success-detail").html(
-      "Paste the text below into your email to <strong>" + ownerEmail + "</strong> (nothing opens automatically)."
+      "Copy the line below and send it to <strong>" + ownerEmail + "</strong>."
     );
-    var lines = [];
-    if (name || email) {
-      lines.push("From: " + (name || "—") + (email ? " <" + email + ">" : ""));
-    }
-    lines.push(msg.trim());
-    $(".resume-access-modal__copy-text").val(lines.join("\n\n"));
+    var line = "Résumé request — please reply to: " + email + (name ? " — " + name : "");
+    $(".resume-access-modal__copy-text").val(line);
     $(".resume-access-modal__copy-block").removeAttr("hidden");
     $(".resume-access-modal__copy-btn").trigger("focus");
   }
 
+  function openMailtoResumeRequest(name, email, ownerEmail, siteLabel) {
+    var body = "Hello,\n\nI’d like a copy of your résumé";
+    if (siteLabel) {
+      body += " (" + siteLabel + ")";
+    }
+    body += ".\n\n—\nMy email: " + email;
+    if (name) {
+      body += "\nName: " + name;
+    }
+    window.location.href =
+      "mailto:" +
+      ownerEmail +
+      "?subject=" +
+      encodeURIComponent("Résumé request") +
+      "&body=" +
+      encodeURIComponent(body);
+    showResumeRequestSuccess(
+      "Almost done",
+      "Your email app should open — send the message and you’re all set."
+    );
+  }
+
+  function submitWeb3Forms(accessKey, name, email, siteLabel, messageBody) {
+    return fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json"
+      },
+      body: JSON.stringify({
+        access_key: accessKey,
+        subject: "Résumé request — " + (siteLabel || "Portfolio"),
+        name: name || "Portfolio visitor",
+        email: email,
+        replyto: email,
+        message: messageBody,
+        from_name: name || "Résumé request",
+        botcheck: false
+      })
+    }).then(function(r) {
+      return r.json().then(function(data) {
+        if (r.ok && data && data.success === true) {
+          return;
+        }
+        throw new Error("Web3Forms");
+      });
+    });
+  }
+
+  function submitFormspree(endpoint, email, name, messageBody, siteLabel) {
+    var fd = new FormData();
+    fd.append("_subject", "Résumé request — " + (siteLabel || "Portfolio"));
+    fd.append("email", email);
+    fd.append("name", name);
+    fd.append("message", messageBody);
+    return fetch(endpoint, {
+      method: "POST",
+      body: fd,
+      headers: { Accept: "application/json" }
+    }).then(function(r) {
+      if (r.ok) {
+        return;
+      }
+      throw new Error("Formspree");
+    });
+  }
+
   $(document).on("click", "[data-resume-modal-dismiss]", function() {
     closeResumeModal();
+  });
+
+  $(document).on("click", ".masthead__link--resume-modal", function(e) {
+    e.preventDefault();
+    openResumeModal();
   });
 
   $(document).on("keydown", function(e) {
@@ -114,40 +191,95 @@ $(document).ready(function(){
   });
 
   $("#resume-request-form").on("submit", function(e) {
+    e.preventDefault();
     var $form = $(this);
+    var web3Key = ($form.attr("data-web3forms-key") || "").trim();
     var endpoint = ($form.attr("data-formspree") || "").trim();
     var ownerEmail = ($form.attr("data-owner-email") || "").trim();
-    var name = $form.find("[name=name]").val() || "";
-    var email = $form.find("[name=email]").val() || "";
-    var message = $form.find("[name=message]").val() || "";
+    var siteLabel = ($form.attr("data-site-label") || "").trim();
+    var name = ($form.find("[name=name]").val() || "").trim();
+    var email = ($form.find("[name=email]").val() || "").trim();
 
-    if (!message.trim()) {
-      e.preventDefault();
-      $form.find("[name=message]").attr("aria-invalid", "true").trigger("focus");
+    if (!email) {
+      $form.find("[name=email]").attr("aria-invalid", "true").trigger("focus");
       return false;
     }
 
-    if (!endpoint) {
-      e.preventDefault();
-      showResumeCopyFallback(name, email, message, ownerEmail);
-      return false;
+    var messageBody =
+      "Résumé access request from your portfolio.\n\n" +
+      "Work email (reply here): " +
+      email +
+      "\n" +
+      "Name: " +
+      (name || "—");
+
+    var $btn = $form.find("[type=submit]");
+    var btnLabel = $btn.text();
+    $btn.prop("disabled", true).text("Sending…");
+
+    function restoreBtn() {
+      $btn.prop("disabled", false).text(btnLabel);
     }
 
-    e.preventDefault();
-    var fd = new FormData($form[0]);
-    fetch(endpoint, {
-      method: "POST",
-      body: fd,
-      headers: { Accept: "application/json" }
-    }).then(function(r) {
-      if (r.ok) {
-        showResumeFormspreeSuccess();
+    function ok() {
+      restoreBtn();
+      showResumeRequestSuccess("Request sent", "Thanks — you’ll get my résumé by email shortly.");
+    }
+
+    function fail() {
+      restoreBtn();
+      if (ownerEmail) {
+        showResumeFailureCopy(name, email, ownerEmail);
       } else {
-        showResumeCopyFallback(name, email, message, ownerEmail);
+        showResumeRequestSuccess("Something went wrong", "Please try again in a moment.");
       }
-    }).catch(function() {
-      showResumeCopyFallback(name, email, message, ownerEmail);
-    });
+    }
+
+    if (web3Key) {
+      submitWeb3Forms(web3Key, name, email, siteLabel, messageBody)
+        .then(ok)
+        .catch(function() {
+          if (endpoint) {
+            submitFormspree(endpoint, email, name, messageBody, siteLabel)
+              .then(ok)
+              .catch(function() {
+                if (ownerEmail) {
+                  restoreBtn();
+                  openMailtoResumeRequest(name, email, ownerEmail, siteLabel);
+                } else {
+                  fail();
+                }
+              });
+          } else if (ownerEmail) {
+            restoreBtn();
+            openMailtoResumeRequest(name, email, ownerEmail, siteLabel);
+          } else {
+            fail();
+          }
+        });
+      return false;
+    }
+
+    if (endpoint) {
+      submitFormspree(endpoint, email, name, messageBody, siteLabel)
+        .then(ok)
+        .catch(function() {
+          if (ownerEmail) {
+            openMailtoResumeRequest(name, email, ownerEmail, siteLabel);
+            restoreBtn();
+          } else {
+            fail();
+          }
+        });
+      return false;
+    }
+
+    if (ownerEmail) {
+      openMailtoResumeRequest(name, email, ownerEmail, siteLabel);
+    } else {
+      showResumeRequestSuccess("Unavailable", "Résumé requests are not configured.");
+    }
+    restoreBtn();
     return false;
   });
 
@@ -163,7 +295,7 @@ $(document).ready(function(){
       $(this).text("Copied!");
       var btn = this;
       setTimeout(function() {
-        $(btn).text("Copy message");
+        $(btn).text("Copy");
       }, 2000);
     } catch (err) {}
   });
@@ -214,8 +346,8 @@ $(document).ready(function(){
     $(".author__urls-wrapper button").toggleClass("open");
   });
 
-  // init smooth scroll
-  $("a").smoothScroll({offset: -20});
+  // init smooth scroll (skip résumé modal nav — it uses in-page dialog)
+  $("a").not(".masthead__link--resume-modal").smoothScroll({offset: -20});
 
   // add lightbox class to all image links
   $("a[href$='.jpg'],a[href$='.jpeg'],a[href$='.JPG'],a[href$='.png'],a[href$='.gif']").addClass("image-popup");

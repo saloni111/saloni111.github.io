@@ -50,10 +50,11 @@ staticman:
 atom_feed:
   path                   : # blank (default) uses feed.xml
 
-# Optional: Formspree URL to receive resume access requests from the modal (https://formspree.io).
-# Leave blank for copy-to-clipboard fallback only (no automatic mail app).
+# Résumé requests (modal on site). Use at least one — Web3Forms is easiest (free): https://web3forms.com
+# Create an access key, verify your inbox, paste the key below. Submissions include the requester’s email.
 resume_request:
-  formspree_endpoint     : ""
+  web3forms_access_key   : ""
+  formspree_endpoint     : ""   # optional backup: https://formspree.io/f/your-id
 
 # SEO Related
 google_site_verification :

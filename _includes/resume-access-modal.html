@@ -4,37 +4,30 @@
     <button type="button" class="resume-access-modal__close" data-resume-modal-dismiss aria-label="Close dialog">&times;</button>
 
     <div class="resume-access-modal__step resume-access-modal__step--form">
-      <div class="resume-access-modal__icon" aria-hidden="true">
-        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" focusable="false">
-          <path d="M12 1C8.676 1 6 3.676 6 7v3H5c-1.105 0-2 .895-2 2v9c0 1.105.895 2 2 2h14c1.105 0 2-.895 2-2v-9c0-1.105-.895-2-2-2h-1V7c0-3.324-2.676-6-6-6zm0 2c2.221 0 4 1.779 4 4v3H8V7c0-2.221 1.779-4 4-4z" fill="currentColor"/>
-        </svg>
-      </div>
-      <h2 id="resume-access-title" class="resume-access-modal__title">You need access</h2>
-      <p class="resume-access-modal__lead">This résumé isn’t shared publicly. Ask the owner for access—everything stays on this page until you choose to send email yourself.</p>
+      <h2 id="resume-access-title" class="resume-access-modal__title">Request résumé</h2>
+      <p class="resume-access-modal__lead">Add your work email — you’ll get the résumé by email. Takes a few seconds.</p>
 
       <form id="resume-request-form" class="resume-access-modal__form" novalidate
+        data-web3forms-key="{{ site.resume_request.web3forms_access_key | default: '' }}"
         data-formspree="{{ site.resume_request.formspree_endpoint | default: '' }}"
-        data-owner-email="{{ site.author.email | escape }}">
-        <input type="hidden" name="_subject" value="Resume access request" />
+        data-owner-email="{{ site.author.email | escape }}"
+        data-site-label="{{ site.title | escape }}">
+        <input type="checkbox" name="botcheck" class="resume-access-modal__botcheck" value="1" tabindex="-1" autocomplete="off" aria-hidden="true" />
 
         <div class="resume-access-modal__fields">
           <div class="resume-access-modal__field">
+            <label for="resume-req-email">Work email <span class="resume-access-modal__required">*</span></label>
+            <input id="resume-req-email" name="email" type="email" required autocomplete="email" inputmode="email" placeholder="you@company.com" />
+          </div>
+          <div class="resume-access-modal__field">
             <label for="resume-req-name">Name <span class="resume-access-modal__optional">(optional)</span></label>
-            <input id="resume-req-name" name="name" type="text" autocomplete="name" />
-          </div>
-          <div class="resume-access-modal__field">
-            <label for="resume-req-email">Email <span class="resume-access-modal__optional">(optional)</span></label>
-            <input id="resume-req-email" name="email" type="email" autocomplete="email" />
-          </div>
-          <div class="resume-access-modal__field">
-            <label for="resume-req-message">Message <span class="resume-access-modal__required">*</span></label>
-            <textarea id="resume-req-message" name="message" required rows="4" placeholder="Briefly say why you’d like access…"></textarea>
+            <input id="resume-req-name" name="name" type="text" autocomplete="name" placeholder="Your name" />
           </div>
         </div>
 
         <div class="resume-access-modal__actions">
-          <button type="submit" class="btn resume-access-modal__cta">Request access</button>
-          <button type="button" class="btn btn--inverse resume-access-modal__cancel" data-resume-modal-dismiss>Not now</button>
+          <button type="submit" class="btn resume-access-modal__cta">Send request</button>
+          <button type="button" class="resume-access-modal__link-cancel" data-resume-modal-dismiss>Cancel</button>
         </div>
       </form>
     </div>
@@ -44,8 +37,8 @@
       <p class="resume-access-modal__success-detail"></p>
       <div class="resume-access-modal__copy-block" hidden>
         <label for="resume-access-copy-text" class="resume-access-modal__copy-label">Message to send</label>
-        <textarea id="resume-access-copy-text" class="resume-access-modal__copy-text" readonly rows="6"></textarea>
-        <button type="button" class="btn resume-access-modal__copy-btn">Copy message</button>
+        <textarea id="resume-access-copy-text" class="resume-access-modal__copy-text" readonly rows="5"></textarea>
+        <button type="button" class="btn resume-access-modal__copy-btn">Copy</button>
       </div>
       <button type="button" class="btn btn--inverse resume-access-modal__done" data-resume-modal-dismiss>Close</button>
     </div>

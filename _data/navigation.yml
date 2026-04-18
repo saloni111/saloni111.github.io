@@ -8,6 +8,7 @@ main:
 
   - title: "Resume"
     url: /resume/
+    open_resume_modal: true
 
   # - title: "Cool Stuff!"
   #  url: /cool-stuff/ 

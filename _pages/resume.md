@@ -6,4 +6,4 @@ author_profile: false
 resume_autopen_modal: true
 ---
 
-The résumé is not hosted on this site. Use **Request access** in the dialog to ask for a copy.
+Use **Send request** in the dialog — add your work email and you’re done.
