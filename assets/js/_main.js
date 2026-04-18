@@ -20,47 +20,8 @@ $(document).ready(function(){
       bumpIt();
     }
   }, 250);
-  // FitVids init
-  $("#main").fitVids();
 
-  // init sticky sidebar
-  $(".sticky").Stickyfill();
-
-  var stickySideBar = function(){
-    var show = $(".author__urls-wrapper button").length === 0 ? $(window).width() > 1024 : !$(".author__urls-wrapper button").is(":visible");
-    // console.log("has button: " + $(".author__urls-wrapper button").length === 0);
-    // console.log("Window Width: " + windowWidth);
-    // console.log("show: " + show);
-    //old code was if($(window).width() > 1024)
-    if (show) {
-      // fix
-      Stickyfill.rebuild();
-      Stickyfill.init();
-      $(".author__urls").show();
-    } else {
-      // unfix
-      Stickyfill.stop();
-      $(".author__urls").hide();
-    }
-  };
-
-  stickySideBar();
-
-  $(window).resize(function(){
-    stickySideBar();
-  });
-
-  // Follow menu drop down
-
-  $(".author__urls-wrapper button").on("click", function() {
-    $(".author__urls").fadeToggle("fast", function() {});
-    $(".author__urls-wrapper button").toggleClass("open");
-  });
-
-  // init smooth scroll
-  $("a").smoothScroll({offset: -20});
-
-  // Resume "request access" modal (opens on /resume/; stays in-page — no mailto unless Formspree is set)
+  // Resume "request access" modal — must run before Stickyfill/sidebar logic (resume page has no .sticky; Stickyfill.init can abort the rest of this file if it runs first).
   var $resumeModal = $("#resume-access-dialog");
 
   function resetResumeModal() {
@@ -74,9 +35,19 @@ $(document).ready(function(){
     $resumeModal.find("[aria-invalid=true]").removeAttr("aria-invalid");
   }
 
+  function resumeDialogEl() {
+    return document.getElementById("resume-access-dialog");
+  }
+
   function openResumeModal() {
+    var dlg = resumeDialogEl();
+    if (!dlg || !$resumeModal.length) {
+      return;
+    }
     resetResumeModal();
-    $resumeModal.removeAttr("hidden").attr("aria-hidden", "false");
+    dlg.hidden = false;
+    dlg.removeAttribute("hidden");
+    $resumeModal.attr("aria-hidden", "false");
     $("body").addClass("resume-modal-open");
     var $name = $("#resume-req-name");
     if ($name.length) {
@@ -87,6 +58,10 @@ $(document).ready(function(){
   }
 
   function closeResumeModal() {
+    var dlg = resumeDialogEl();
+    if (dlg) {
+      dlg.hidden = true;
+    }
     $resumeModal.attr("hidden", "").attr("aria-hidden", "true");
     $("body").removeClass("resume-modal-open");
     resetResumeModal();
@@ -129,7 +104,11 @@ $(document).ready(function(){
   });
 
   $(document).on("keydown", function(e) {
-    if (e.keyCode === 27 && !$resumeModal.is("[hidden]")) {
+    if (e.keyCode !== 27) {
+      return;
+    }
+    var dlg = resumeDialogEl();
+    if (dlg && !dlg.hidden) {
       closeResumeModal();
     }
   });
@@ -189,9 +168,54 @@ $(document).ready(function(){
     } catch (err) {}
   });
 
-  if ($("body").is("[data-resume-autopen]")) {
+  function pathLooksLikeResumePage() {
+    var path = (window.location.pathname || "/").replace(/\/+/g, "/");
+    return /\/resume\/?$/.test(path);
+  }
+
+  if ($("body").is("[data-resume-autopen]") || pathLooksLikeResumePage()) {
     openResumeModal();
   }
+
+  // FitVids init
+  $("#main").fitVids();
+
+  // init sticky sidebar
+  $(".sticky").Stickyfill();
+
+  var stickySideBar = function(){
+    var show = $(".author__urls-wrapper button").length === 0 ? $(window).width() > 1024 : !$(".author__urls-wrapper button").is(":visible");
+    // console.log("has button: " + $(".author__urls-wrapper button").length === 0);
+    // console.log("Window Width: " + windowWidth);
+    // console.log("show: " + show);
+    //old code was if($(window).width() > 1024)
+    if (show) {
+      // fix
+      Stickyfill.rebuild();
+      Stickyfill.init();
+      $(".author__urls").show();
+    } else {
+      // unfix
+      Stickyfill.stop();
+      $(".author__urls").hide();
+    }
+  };
+
+  stickySideBar();
+
+  $(window).resize(function(){
+    stickySideBar();
+  });
+
+  // Follow menu drop down
+
+  $(".author__urls-wrapper button").on("click", function() {
+    $(".author__urls").fadeToggle("fast", function() {});
+    $(".author__urls-wrapper button").toggleClass("open");
+  });
+
+  // init smooth scroll
+  $("a").smoothScroll({offset: -20});
 
   // add lightbox class to all image links
   $("a[href$='.jpg'],a[href$='.jpeg'],a[href$='.JPG'],a[href$='.png'],a[href$='.gif']").addClass("image-popup");
