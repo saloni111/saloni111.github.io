@@ -53,7 +53,7 @@ atom_feed:
 # Résumé requests (modal on site). Use at least one — Web3Forms is easiest (free): https://web3forms.com
 # Create an access key, verify your inbox, paste the key below. Submissions include the requester’s email.
 resume_request:
-  web3forms_access_key   : ""
+  web3forms_access_key   : "a8e85bbf-d60e-49b5-bf34-230c61a2cd8f"
   formspree_endpoint     : ""   # optional backup: https://formspree.io/f/your-id
 
 # SEO Related
