@@ -57,34 +57,72 @@ $(document).ready(function(){
     $(".author__urls-wrapper button").toggleClass("open");
   });
 
-  // init smooth scroll (exclude resume modal trigger)
-  $("a").not(".masthead__link--resume-access").smoothScroll({offset: -20});
+  // init smooth scroll
+  $("a").smoothScroll({offset: -20});
 
-  // Resume "request access" modal (Drive-style)
+  // Resume "request access" modal (opens on /resume/; stays in-page — no mailto unless Formspree is set)
   var $resumeModal = $("#resume-access-dialog");
-  var lastResumeTrigger = null;
+
+  function resetResumeModal() {
+    var formEl = document.getElementById("resume-request-form");
+    if (formEl) {
+      formEl.reset();
+    }
+    $(".resume-access-modal__step--form").removeAttr("hidden");
+    $(".resume-access-modal__step--thanks").attr("hidden", "");
+    $(".resume-access-modal__copy-block").attr("hidden", "");
+    $resumeModal.find("[aria-invalid=true]").removeAttr("aria-invalid");
+  }
 
   function openResumeModal() {
+    resetResumeModal();
     $resumeModal.removeAttr("hidden").attr("aria-hidden", "false");
-    $(".masthead__link--resume-access").attr("aria-expanded", "true");
     $("body").addClass("resume-modal-open");
-    $resumeModal.find(".resume-access-modal__close").first().trigger("focus");
+    var $name = $("#resume-req-name");
+    if ($name.length) {
+      $name.trigger("focus");
+    } else {
+      $resumeModal.find(".resume-access-modal__close").first().trigger("focus");
+    }
   }
 
   function closeResumeModal() {
     $resumeModal.attr("hidden", "").attr("aria-hidden", "true");
-    $(".masthead__link--resume-access").attr("aria-expanded", "false");
     $("body").removeClass("resume-modal-open");
-    if (lastResumeTrigger) {
-      $(lastResumeTrigger).trigger("focus");
+    resetResumeModal();
+    if ($("body").is("[data-resume-autopen]")) {
+      var $navResume = $("#site-nav a[href*='/resume']");
+      if ($navResume.length) {
+        $navResume.first().trigger("focus");
+      }
     }
   }
 
-  $(document).on("click", ".masthead__link--resume-access", function(e) {
-    e.preventDefault();
-    lastResumeTrigger = this;
-    openResumeModal();
-  });
+  function showResumeFormspreeSuccess() {
+    $(".resume-access-modal__step--form").attr("hidden", "");
+    $(".resume-access-modal__step--thanks").removeAttr("hidden");
+    $(".resume-access-modal__success-title").text("Request sent");
+    $(".resume-access-modal__success-detail").text("Thanks — the owner will get your message by email.");
+    $(".resume-access-modal__copy-block").attr("hidden", "");
+    $(".resume-access-modal__done").trigger("focus");
+  }
+
+  function showResumeCopyFallback(name, email, msg, ownerEmail) {
+    $(".resume-access-modal__step--form").attr("hidden", "");
+    $(".resume-access-modal__step--thanks").removeAttr("hidden");
+    $(".resume-access-modal__success-title").text("Copy your request");
+    $(".resume-access-modal__success-detail").html(
+      "Paste the text below into your email to <strong>" + ownerEmail + "</strong> (nothing opens automatically)."
+    );
+    var lines = [];
+    if (name || email) {
+      lines.push("From: " + (name || "—") + (email ? " <" + email + ">" : ""));
+    }
+    lines.push(msg.trim());
+    $(".resume-access-modal__copy-text").val(lines.join("\n\n"));
+    $(".resume-access-modal__copy-block").removeAttr("hidden");
+    $(".resume-access-modal__copy-btn").trigger("focus");
+  }
 
   $(document).on("click", "[data-resume-modal-dismiss]", function() {
     closeResumeModal();
@@ -95,6 +133,65 @@ $(document).ready(function(){
       closeResumeModal();
     }
   });
+
+  $("#resume-request-form").on("submit", function(e) {
+    var $form = $(this);
+    var endpoint = ($form.attr("data-formspree") || "").trim();
+    var ownerEmail = ($form.attr("data-owner-email") || "").trim();
+    var name = $form.find("[name=name]").val() || "";
+    var email = $form.find("[name=email]").val() || "";
+    var message = $form.find("[name=message]").val() || "";
+
+    if (!message.trim()) {
+      e.preventDefault();
+      $form.find("[name=message]").attr("aria-invalid", "true").trigger("focus");
+      return false;
+    }
+
+    if (!endpoint) {
+      e.preventDefault();
+      showResumeCopyFallback(name, email, message, ownerEmail);
+      return false;
+    }
+
+    e.preventDefault();
+    var fd = new FormData($form[0]);
+    fetch(endpoint, {
+      method: "POST",
+      body: fd,
+      headers: { Accept: "application/json" }
+    }).then(function(r) {
+      if (r.ok) {
+        showResumeFormspreeSuccess();
+      } else {
+        showResumeCopyFallback(name, email, message, ownerEmail);
+      }
+    }).catch(function() {
+      showResumeCopyFallback(name, email, message, ownerEmail);
+    });
+    return false;
+  });
+
+  $(document).on("click", ".resume-access-modal__copy-btn", function() {
+    var ta = document.getElementById("resume-access-copy-text");
+    if (!ta) {
+      return;
+    }
+    ta.select();
+    ta.setSelectionRange(0, 99999);
+    try {
+      document.execCommand("copy");
+      $(this).text("Copied!");
+      var btn = this;
+      setTimeout(function() {
+        $(btn).text("Copy message");
+      }, 2000);
+    } catch (err) {}
+  });
+
+  if ($("body").is("[data-resume-autopen]")) {
+    openResumeModal();
+  }
 
   // add lightbox class to all image links
   $("a[href$='.jpg'],a[href$='.jpeg'],a[href$='.JPG'],a[href$='.png'],a[href$='.gif']").addClass("image-popup");

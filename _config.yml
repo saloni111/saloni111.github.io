@@ -50,6 +50,11 @@ staticman:
 atom_feed:
   path                   : # blank (default) uses feed.xml
 
+# Optional: Formspree URL to receive resume access requests from the modal (https://formspree.io).
+# Leave blank for copy-to-clipboard fallback only (no automatic mail app).
+resume_request:
+  formspree_endpoint     : ""
+
 # SEO Related
 google_site_verification :
 bing_site_verification   :
